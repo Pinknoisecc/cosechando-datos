@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Software agrícola | Cosechando Datos</title>
+  <meta name="description" content="Software agrícola para gestionar tu campo en un solo lugar">
+  <meta name="keywords" content="agricultura, software, cosecha, campo, datos, gestión agrícola, control de cosecha, labores de campo, costos agrícolas, alertas de heladas">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img 
+        src="assets/img/logotipo-cosechando-datos.webp" 
+        alt="Logotipo Cosechando Datos - Software agrícola"
+        title="Cosechando Datos - Software agrícola de gestión"
+        loading="eager"
+      >
+    </a>
+
+    <!-- NAV -->
+    <div class="d-flex align-items-center gap-3">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./about.html">Nosotros</a></li>
+
+          <li class="dropdown">
+            <a href="#modules">
+              <span>Módulos</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="#">Control Cosecha</a></li>
+              <li><a href="#">CD Campo</a></li>
+              <li><a href="#">CRP Agrícola</a></li>
+              <li><a href="#">Alerta Heladas</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+
+          
+
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- CTA HEADER -->
+      <a
+      href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20Cosechando%20Datos"
+      class="btn-cta-primary btn-header-cta d-none d-xl-inline-flex"
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar demo del software agrícola por WhatsApp"
+      title="Agendar demo del software agrícola"
+    >
+      Agendar prueba
+    </a>
+    </div>
+  </div>
+</header>
+
+
+  <main class="main">
+
+<!-- =========================
+     HERO
+     ========================= -->
+<section id="hero" class="hero hero-cosecha section" role="banner">
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="container hero-inner position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-5 align-items-center">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+
+        <div class="hero-badge badge mb-3">
+          <span class="badge rounded-pill text-bg-light border" title="Plataforma validada en terreno">
+            Control de Cosecha Validado en terreno
+          </span>
+        </div>
+
+        <h1>Control de cosecha digital para medir productividad en tiempo real</h1>
+
+        <p class="hero-lead">
+          Monitorea el rendimiento de tu cosecha al instante desde celular o computador. 
+          Elimina planillas de papel, reduce errores de transcripción y evita datos que no cuadran, 
+          para tomar decisiones logísticas en el momento exacto.
+        </p>
+
+        <div class="hero-ctas d-flex flex-wrap gap-3 align-items-center">
+          <div class="hero-ctas d-flex flex-wrap gap-3 align-items-center">
+          <a
+            href="#como-funciona"
+            class="btn-cta-primary btn-get-started"
+            aria-label="Ir a la sección cómo funciona"
+          >
+            Saber más
+          </a>
+        </div>
+          <a
+            href="https://www.youtube.com/watch?v=cf4Oh8LV0Is"
+            class="glightbox btn-watch-video d-flex align-items-center"
+            aria-label="Ver video demostrativo del software agrícola"
+            title="Ver demostración del software agrícola Cosechando Datos"
+          >
+            <i class="bi bi-play-circle"></i><span>Ver video</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img
+          src="assets/img/software-control-de-cosecha.png"
+          class="img-fluid hero-visual"
+          alt="Interfaz del software agrícola Cosechando Datos para gestión de campo, costos y cosecha"
+          title="Software agrícola para gestionar costos, cosecha y labores de campo"
+          loading="eager"
+          decoding="async"
+          width="720"
+          height="480"
+        >
+      </div>
+    </div>
+    <p class=" small mt-4">
+      Funciona con o sin señal · Datos íntegros · Soporte y acompañamiento
+  </div>
+</section>
+<!-- /HERO -->
+
+<!-- =========================
+     ICON BOXES (solo informativos)
+     ========================= -->
+<section id="hero-beneficios" class="hero-icon-boxes section" aria-label="Beneficios principales del software agrícola">
+  <div class="container" data-aos="fade-up" data-aos-delay="200">
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-bar-chart-line"></i>
+          </div>
+          <h3 class="title">Productividad por cuartel y variedad</h3>
+          <p>
+            Rendimiento real para decidir en terreno.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-people"></i>
+          </div>
+          <h3 class="title">Por cuadrilla o por trabajador</h3>
+          <p>
+            Mide avance y desempeño sin suposiciones.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-file-earmark-x"></i>
+          </div>
+          <h3 class="title">Sin planillas ni doble digitación</h3>
+          <p>
+            Menos errores y menos tiempo perdido.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-ui-checks-grid"></i>
+          </div>
+          <h3 class="title">4 formatos según tu operación</h3>
+          <p>
+            Individual · Trazabilidad · Pesaje · Cuadrilla
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CERTIFICACIONES / TRUST BAR -->
+<section class="certifications" aria-label="Certificaciones">
+  <div class="container certifications__inner" data-aos="fade-up">
+
+    <img
+      class="certifications__logo"
+      src="assets/img/sag-logotipo-cosechando-datos.webp"
+      alt="Certificación SAG"
+      title="Certificación SAG"
+      loading="lazy"
+      decoding="async"
+      width="140"
+      height="40"
+      onerror="this.style.display='none';"
+    >
+
+    <img
+      class="certifications__logo"
+      src="assets/img/globalg.a.p logotipo-cosechando-datos.webp"
+      alt="Certificación Global G.A.P."
+      title="Certificación Global G.A.P."
+      loading="lazy"
+      decoding="async"
+      width="200"
+      height="40"
+      onerror="this.style.display='none';"
+    >
+
+  </div>
+</section>
+
+
+
+
+<!-- =========================
+     HOW IT WORKS SECTION
+     ========================= -->
+<section id="como-funciona" class="how-it-works section">
+  <div class="container">
+
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">¿Como funciona el Control de Cosecha?</span>
+      <h2>Así eliminas las planillas y controlas la cosecha en <span style="color: #8CC63F;">tiempo real</span></h2>
+      <p class="section-lead">
+        Registro digital en terreno, productividad por cuartel/cuadrilla y decisiones logísticas al instante.
+      </p>
+    </header>
+
+    <div class="steps-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Step 1 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-geo-alt"></i>
+        </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 1</span>
+            <h3 class="step-title">Configuramos tu cosecha según tu realidad</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          Definimos cuarteles, variedades, cuadrillas y reglas de control para que el dato salga limpio desde el día 1.
+        </p>
+
+        <ul class="step-bullets" aria-label="Beneficios del paso 1">
+          <li><i class="bi bi-check2"></i> Checklist inicial por faena y variedad</li>
+          <li><i class="bi bi-check2"></i> Parametrización por cuartel, cuadrilla o trabajador</li>
+          <li><i class="bi bi-check2"></i> Reportes clave definidos con tu equipo</li>
+        </ul>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-phone"></i>
+          </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 2</span>
+            <h3 class="step-title">Registro directo en terreno</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          Tu equipo registra desde celular o web, sin papel y sin doble digitación.
+        </p>
+
+        <ul class="step-bullets" aria-label="Beneficios del paso 2">
+          <li><i class="bi bi-check2"></i> Menos errores y datos más confiables</li>
+          <li><i class="bi bi-check2"></i> Evidencias y trazabilidad (según formato)</li>
+          <li><i class="bi bi-check2"></i> Datos en tiempo real para supervisión</li>
+        </ul>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 3</span>
+            <h3 class="step-title">Decisiones logísticas con productividad real</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          Visualiza rendimiento por cuartel/cuadrilla/variedad y ajusta recursos en el momento exacto.
+        </p>
+
+        <ul class="step-bullets" aria-label="Beneficios del paso 3">
+          <li><i class="bi bi-check2"></i> Productividad por cuartel, trabajador o variedad</li>
+          <li><i class="bi bi-check2"></i> Control por formatos: Individual / Trazabilidad / Pesaje / Cuadrilla</li>
+          <li><i class="bi bi-check2"></i> Menos pérdidas por desorden y datos que no cuadran</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <!-- CTA integrado (conversión) -->
+    <div class="how-cta" data-aos="fade-up" data-aos-delay="150">
+      <div class="how-cta__content">
+        <h3>¿Quieres ver Control de Cosecha funcionando en tu campo?</h3>
+        <p>En una demo te mostramos el flujo real y el formato que mejor se adapta a tu faena.</p>
+        <small>Respuesta rápida en horario laboral · Demo sin compromiso</small>
+      </div>
+
+      <div class="how-cta__actions">
+        <a
+        class="how-cta__btn btn-cta-primary"
+        href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20Cosechando%20Datos"
+        target="_blank"
+        rel="noopener"
+        title="Agendar demo por WhatsApp"
+        aria-label="Agendar demo por WhatsApp"
+      >
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        Agendar demo por WhatsApp
+      </a>
+
+        <span class="how-cta__hint">Ideal para resolver dudas y ver el sistema funcionando.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================
+     CONTROL DE COSECHA: PROBLEMAS vs SOLUCIÓN (En temporada)
+     ========================= -->
+<section id="control-cosecha-pain-solution" class="pain-solution section" aria-labelledby="harvestPainSolutionTitle">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">Control de cosecha</span>
+      <h2 id="harvestPainSolutionTitle">
+        Si esto te pasa en <strong>plena cosecha</strong>, aquí tienes el <span style="color: #8CC63F;">control</span>
+      </h2>
+      <p class="section-lead">
+        En temporada, cada hora cuenta: registros atrasados, datos dispersos y baja trazabilidad generan pérdidas.
+        Con Cosechando Datos, tu cosecha se gestiona con información centralizada y en tiempo real.
+      </p>
+    </header>
+
+    <!-- Grid: Dolor vs Solución -->
+    <div class="row g-4 align-items-stretch mt-3" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Columna: Problemas -->
+      <div class="col-lg-6">
+        <div class="ps-card ps-card--pain h-100">
+          <div class="ps-card__head">
+            <div class="ps-card__icon" aria-hidden="true">
+              <i class="bi bi-x-circle"></i>
+            </div>
+            <div>
+              <h3 class="ps-card__title">Lo que suele fallar en plena cosecha</h3>
+              <p class="ps-card__subtitle mb-0">
+                Señales típicas cuando el control depende de planillas, WhatsApp, papel y “lo que me dijeron”.
+              </p>
+            </div>
+          </div>
+
+          <ul class="ps-list" aria-label="Problemas comunes en control de cosecha">
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Registros por cuadrilla que no cuadran</strong>
+                <span>Cada capataz anota distinto y al final nadie confía en el número real.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Datos llegan tarde para decidir</strong>
+                <span>Cuando se revisa, la fruta ya salió del cuartel y el día ya se perdió.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Poca trazabilidad por cuartel, variedad o bloque</strong>
+                <span>Se vuelve difícil saber qué se cosechó, dónde y con qué rendimiento real.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Doble digitación y errores humanos</strong>
+                <span>Papel en terreno → planilla en oficina: errores, omisiones y horas perdidas.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Dificultad para medir rendimiento por persona</strong>
+                <span>Sin datos claros, es difícil detectar baja productividad o desorden operativo.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Visibilidad limitada del avance diario</strong>
+                <span>No se sabe con certeza cuánto se avanzó hoy ni cuánto falta para cumplir la meta.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Columna: Solución -->
+      <div class="col-lg-6">
+        <div class="ps-card ps-card--solution h-100">
+          <div class="ps-card__head">
+            <div class="ps-card__icon" aria-hidden="true">
+              <i class="bi bi-check-circle"></i>
+            </div>
+            <div>
+              <h3 class="ps-card__title">Cómo Cosechando Datos ordena tu cosecha</h3>
+              <p class="ps-card__subtitle mb-0">
+                Control en tiempo real para registrar, supervisar y tomar decisiones con datos confiables.
+              </p>
+            </div>
+          </div>
+
+          <ul class="ps-list" aria-label="Soluciones para control de cosecha con Cosechando Datos">
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Registro directo desde terreno</strong>
+                <span>Web + celular para registrar cosecha en el momento, sin papel ni transcripción.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Avance diario claro por cuartel y cuadrilla</strong>
+                <span>Ve en un panel cuánto se cosechó hoy y dónde, con seguimiento por temporada.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Productividad por persona (cuando aplica)</strong>
+                <span>Identifica rendimientos, detecta brechas y mejora la asignación de cuadrillas.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Trazabilidad por bloque/variedad</strong>
+                <span>Controla lo que se cosecha y su origen operativo para ordenar reportes y decisiones.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Menos errores, menos pérdidas</strong>
+                <span>Datos consistentes y centralizados para evitar “cifras dobles” y decisiones a ciegas.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Reportes listos para cerrar la jornada</strong>
+                <span>Consolida información de cosecha y compártela sin depender de planillas sueltas.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA suave -->
+    <div class="ps-cta mt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="ps-cta__content">
+        <h3 class="mb-1">¿Estás en cosecha y necesitas control real?</h3>
+        <p class="mb-0">
+          Te mostramos cómo se adapta a tu campo: cuarteles, cuadrillas, metas diarias y reportes de temporada.
+        </p>
+      </div>
+
+      <div class="ps-cta__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20estoy%20en%20temporada%20de%20cosecha%20y%20quiero%20evaluar%20el%20m%C3%B3dulo%20de%20Control%20de%20Cosecha%20de%20Cosechando%20Datos"
+          class="btn-cta-primary ps-cta__btn"
+          target="_blank"
+          rel="noopener"
+          aria-label="Evaluar Control de Cosecha en WhatsApp"
+          title="Evaluar Control de Cosecha en WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Evaluar en WhatsApp
+        </a>
+
+        <small class="ps-cta__hint">Respuesta rápida en horario laboral · Sin compromiso</small>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     CONTROL DE COSECHA: FLUJO (3 pasos)
+     ========================= -->
+<section id="control-cosecha-flujo" class="harvest-flow section" aria-labelledby="harvestFlowTitle">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="harvest-flow__header text-center" data-aos="fade-up">
+      <h2 id="harvestFlowTitle" class="harvest-flow__title" style="color: white;">Control de cosecha en terreno</h2>
+      <p class="harvest-flow__lead">
+        Un flujo simple para registrar, supervisar y analizar tu cosecha con datos confiables, sin papel ni planillas sueltas.
+      </p>
+    </header>
+
+    <!-- Steps -->
+    <div class="harvest-flow__steps" style="--icon-size: 74px;" data-aos="fade-up" data-aos-delay="100" role="list">
+
+      <!-- Step 1 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-qr-code-scan"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Registrar en terreno</h3>
+        <p class="harvest-step__text">
+          Registra cosecha directamente en el campo con pulseras QR, sensores RFID o desde el celular.
+          Elimina papel, “doble digitación” y diferencias entre cuadrillas.
+        </p>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-tablet"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Monitorear en tiempo real</h3>
+        <p class="harvest-step__text">
+          Supervisa el avance por cuartel, cuadrilla o bloque durante la jornada.
+          Detecta atrasos, diferencias de rendimiento y desvíos cuando aún se pueden corregir.
+        </p>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-bar-chart-line"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Analizar y decidir</h3>
+        <p class="harvest-step__text">
+          Cierra el día con información ordenada y trazable.
+          Compara rendimiento por temporada y toma mejores decisiones para los próximos días de cosecha.
+        </p>
+      </article>
+
+    </div>
+
+    <!-- Micro CTA -->
+    <div class="harvest-flow__cta" data-aos="fade-up" data-aos-delay="150">
+      <p class="harvest-flow__cta-text mb-0">
+        ¿Quieres ver este flujo aplicado a tu cosecha y tu forma de trabajar?
+      </p>
+
+      <a
+        href="https://wa.me/56956686855?text=Hola%2C%20quiero%20ver%20c%C3%B3mo%20funciona%20el%20Control%20de%20Cosecha%20en%20mi%20operaci%C3%B3n"
+        class="btn-cta-primary harvest-flow__cta-btn"
+        target="_blank"
+        rel="noopener"
+        aria-label="Ver flujo de Control de Cosecha en WhatsApp"
+        title="Ver flujo de Control de Cosecha en WhatsApp"
+      >
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        Ver en WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     CONTROL DE COSECHA: BENEFICIOS (diferente al flujo)
+     Diseño: panel blanco + highlight + cards
+     ========================= -->
+<section id="control-cosecha-beneficios" class="harvest-benefits section" aria-labelledby="harvestBenefitsTitle">
+  <div class="container">
+
+    <div class="harvest-benefits__wrap" data-aos="fade-up">
+
+      <!-- Left: copy + highlight -->
+      <div class="harvest-benefits__intro">
+        <span class="harvest-benefits__kicker">Resultados en plena temporada</span>
+
+        <h2 id="harvestBenefitsTitle" class="harvest-benefits__title">
+          Qué cambia cuando controlas la cosecha con <span class="harvest-benefits__accent">datos</span>
+        </h2>
+
+        <p class="harvest-benefits__lead">
+          El valor no está en “digitalizar por digitalizar”, sino en tener claridad diaria para actuar a tiempo:
+          menos errores, mejor uso de mano de obra y decisiones basadas en hechos.
+        </p>
+
+        <!-- Highlight card (sin números inventados) -->
+        <div class="harvest-benefits__highlight" role="note" aria-label="Beneficio destacado del control de cosecha">
+          <div class="harvest-benefits__highlight-icon" aria-hidden="true">
+            <i class="bi bi-lightning-charge"></i>
+          </div>
+
+          <div class="harvest-benefits__highlight-content">
+            <h3 class="harvest-benefits__highlight-title">Decidir el mismo día</h3>
+            <p class="harvest-benefits__highlight-text mb-0">
+              Con visibilidad en terreno, detectas desvíos durante la jornada y ajustas antes de que se conviertan en pérdidas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Secondary CTA -->
+        <div class="harvest-benefits__actions">
+          <a
+            href="https://wa.me/56956686855?text=Hola%2C%20quiero%20entender%20los%20beneficios%20del%20Control%20de%20Cosecha%20para%20mi%20campo"
+            class="btn-cta-primary harvest-benefits__btn"
+            target="_blank"
+            rel="noopener"
+            aria-label="Evaluar beneficios en WhatsApp"
+            title="Evaluar beneficios en WhatsApp"
+          >
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            Evaluar beneficios en WhatsApp
+          </a>
+
+          <p class="harvest-benefits__hint mb-0">Te respondemos rápido en horario laboral · Sin compromiso</p>
+        </div>
+      </div>
+
+      <!-- Right: benefit grid -->
+      <div class="harvest-benefits__grid" role="list" aria-label="Beneficios del control de cosecha">
+        <!-- Benefit 1 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-clipboard-check"></i></span>
+            <h3 class="benefit-card__title">Cierre diario sin planillas</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Consolidas información al final del día sin transcribir papel ni depender de múltiples archivos.
+          </p>
+        </article>
+
+        <!-- Benefit 2 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-people"></i></span>
+            <h3 class="benefit-card__title">Mejor uso de mano de obra</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Ves rendimientos por cuadrilla y ajustas asignaciones según el avance real de la jornada.
+          </p>
+        </article>
+
+        <!-- Benefit 3 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-signpost-split"></i></span>
+            <h3 class="benefit-card__title">Trazabilidad por cuartel y bloque</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Ordenas la cosecha por sector/variedad y reduces discusiones por números “dobles”.
+          </p>
+        </article>
+
+        <!-- Benefit 4 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-exclamation-triangle"></i></span>
+            <h3 class="benefit-card__title">Menos errores y omisiones</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Disminuyes errores de digitación y pérdidas de información típicas de procesos manuales.
+          </p>
+        </article>
+
+        <!-- Benefit 5 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-bar-chart"></i></span>
+            <h3 class="benefit-card__title">Comparación por día y temporada</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Evalúas el rendimiento con contexto y tomas decisiones para los próximos días de cosecha.
+          </p>
+        </article>
+
+        <!-- Benefit 6 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-shield-check"></i></span>
+            <h3 class="benefit-card__title">Control con datos confiables</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Menos intuición y más evidencia para supervisar, corregir y sostener la productividad.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =========================
+     USO REAL EN TERRENO (Videos clientes)
+     ========================= -->
+<section id="uso-real" class="real-use section" aria-label="Uso real en terreno">
+  <div id= "testimonials" class="container">
+
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">Uso real en terreno</span>
+      <h2>Productores que ya trabajan con Cosechando <span style="color: #8CC63F;">Datos</span></h2>
+      <p class="section-lead">
+        No son demos ni simulaciones. Son operaciones agrícolas reales usando el sistema día a día.
+      </p>
+    </header>
+
+    <div class="real-use-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Video 1 -->
+      <article class="real-use-card">
+        <a
+          href="https://youtu.be/czIPrYXvrRQ"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: control de cosecha en operación real"
+          title="Ver video de cliente: control de cosecha"
+          data-gallery="realuse"
+        >
+          <!-- Opción A: miniatura desde YouTube (no necesitas archivo local) -->
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-2.webp"
+            alt="Video de cliente usando Cosechando Datos para control de cosecha"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Productores usando el sistema día a día</h3>
+          <p>Registro y supervisión diaria con productividad por cuadrilla y cuartel.</p>
+        </div>
+      </article>
+
+      <!-- Video 2 -->
+      <article class="real-use-card">
+        <a
+          href="https://www.youtube.com/watch?v=tl9tKoB2B5Y"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: registro desde celular en terreno"
+          title="Ver video de cliente: registro en terreno"
+          data-gallery="realuse"
+        >
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-1.webp"
+            alt="Video de cliente registrando labores y evidencias desde el celular"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Registro directo en terreno</h3>
+          <p>Labores, cosecha y evidencias desde web o celular, sin doble digitación.</p>
+        </div>
+      </article>
+
+      <!-- Video 3 -->
+      <article class="real-use-card">
+        <a
+          href="https://www.youtube.com/watch?v=vkn7ZJQQZ7k"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: costos y decisiones con datos"
+          title="Ver video de cliente: costos y decisiones"
+          data-gallery="realuse"
+        >
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-3.webp"
+            alt="Video de cliente visualizando costos agrícolas y reportes en Cosechando Datos"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Decisiones con datos reales</h3>
+          <p>Costos por centro de costo y reportes por temporada para mejorar rentabilidad.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="real-use-cta" data-aos="fade-up" data-aos-delay="150">
+      <div class="real-use-cta__text">
+        <h3>¿Quieres ver cómo se aplicaría en tu campo?</h3>
+        <p>Te mostramos el flujo completo con ejemplos reales según tu operación.</p>
+        <small>Respuesta rápida en horario laboral · Demo sin compromiso</small>
+      </div>
+
+      <div class="real-use-cta__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20ver%20cómo%20se%20usa%20Cosechando%20Datos%20en%20mi%20campo"
+          class="btn-cta-primary"
+          target="_blank"
+          rel="noopener"
+          aria-label="Agendar demo por WhatsApp"
+          title="Agendar demo por WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Agendar demo por WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Faq Section -->
+<section id="faq" class="faq section light-background">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Intro -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="content px-xl-5">
+          <h3><span>Preguntas </span><strong>Frecuentes</strong></h3>
+          <p>
+            Respondemos las dudas más comunes antes de comenzar.
+            Si tu pregunta no está aquí, la resolvemos contigo en una demo.
+          </p>
+        </div>
+      </div>
+
+       <!-- FAQ items -->
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-container">
+
+          <!-- 1 -->
+          <div class="faq-item faq-active">
+            <h3>
+              <span class="num">1.</span>
+              <span>¿Puedo registrar la cosecha en terreno desde el celular?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. Puedes registrar cosecha directamente desde celular o web, sin planillas ni papel.
+                El objetivo es que el dato nazca en terreno y quede disponible para supervisión inmediata.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 2 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">2.</span>
+              <span>¿Funciona si no tengo señal o internet en el campo?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. El sistema puede operar con o sin señal. Cuando no hay conexión, los registros quedan guardados
+                y se sincronizan automáticamente cuando vuelve internet, manteniendo la continuidad del control.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 3 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">3.</span>
+              <span>¿Se puede controlar por cuartel, bloque, variedad o cuadrilla?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. El Control de Cosecha se configura según la realidad de tu campo para reportar productividad
+                por cuartel/bloque/variedad y también por cuadrilla (o trabajador cuando aplica).
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 4 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">4.</span>
+              <span>¿Qué evita la “doble digitación” y los datos que no cuadran?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                El registro se hace una sola vez en terreno y queda centralizado.
+                Así reduces transcripción de papel, múltiples planillas por cuadrilla y diferencias
+                entre registros “de oficina” vs. lo que pasó realmente en campo.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 5 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">5.</span>
+              <span>¿Qué necesito para implementarlo en mi operación?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Partimos configurando cuarteles, variedades, cuadrillas y formato de control.
+                Luego se capacita a tu equipo y se prueba el flujo en terreno para que el sistema quede andando
+                sin fricción desde el inicio de la temporada.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 6 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">6.</span>
+              <span>¿Se puede usar con pulseras QR o sensores RFID?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. El módulo permite trabajar con distintas formas de identificación y registro (como pulseras QR
+                y sensores RFID), además del registro directo desde celular, según lo que sea más cómodo para tu faena.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 7 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">7.</span>
+              <span>¿Voy a poder ver avances durante la jornada (no solo al final del día)?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. La idea del Control de Cosecha es tener visibilidad durante la jornada:
+                detectar atrasos, comparar rendimientos y corregir desvíos cuando aún estás a tiempo.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 8 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">8.</span>
+              <span>¿Entregan soporte y acompañamiento para que el equipo lo use bien?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. Acompañamos la implementación y damos soporte para que tu equipo adopte el sistema sin complicaciones.
+                La meta es que el control sea consistente desde terreno y útil para tomar decisiones reales.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+        </div>
+      </div>
+
+  </div>
+
+</section>
+<!-- /Faq Section -->
+
+<!-- =========================
+     CTA FINAL – CONTROL DE COSECHA
+     ========================= -->
+<section id="cta-final" class="cta-final section light-background">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="cta-final__box">
+
+      <div class="cta-final__content">
+        <h2>¿Quieres ver el Control de Cosecha aplicado a tu campo?</h2>
+        <p>
+          Agenda una demo y revisamos cómo registrar, supervisar y analizar tu cosecha
+          según tus cuarteles, cuadrillas y forma real de trabajo.
+        </p>
+        <small>
+          Respuesta rápida en horario laboral · Demo sin compromiso
+        </small>
+      </div>
+
+      <div class="cta-final__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20ver%20el%20Control%20de%20Cosecha%20aplicado%20a%20mi%20campo"
+          class="btn-cta-primary"
+          target="_blank"
+          rel="noopener"
+          aria-label="Agendar demo de Control de Cosecha por WhatsApp"
+          title="Agendar demo de Control de Cosecha"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Ver Control de Cosecha en mi campo
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /CTA FINAL – CONTROL DE COSECHA -->
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <div>
+      <span>¿Tienes dudas?</span>
+      <span class="description-title">Hablemos de tu operación agrícola</span>
+    </div>
+    <p class="section-subtitle">
+      Nuestro equipo te orienta según tu campo, temporada y objetivos productivos.
+    </p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <!-- Info Column -->
+      <div class="col-lg-4">
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Ubicación</h3>
+            <p>Los Niches, Curicó, Chile</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Teléfono</h3>
+            <p>
+              +56956686855
+            </p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email</h3>
+            <p>
+              contacto@cosechandodatos.cl   
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Info Column -->
+
+      <!-- Form Column -->
+      <div class="col-lg-8">
+
+        <form
+          action="forms/contact.php"
+          method="post"
+          class="php-email-form"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Nombre y apellido"
+                required
+              >
+            </div>
+
+            <div class="col-md-6">
+              <input
+                type="tel"
+                name="phone"
+                class="form-control"
+                placeholder="Teléfono de contacto"
+                required
+              >
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              >
+            </div>
+
+            <div class="col-md-12">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="6"
+                placeholder="Cuéntanos brevemente sobre tu campo, cultivo o necesidad"
+                required
+              ></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+
+              <div class="loading">Enviando mensaje…</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                ¡Mensaje enviado! Nuestro equipo se pondrá en contacto contigo.
+              </div>
+
+              <button type="submit">
+                Enviar consulta
+              </button>
+
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+      <!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /Contact Section -->
+
+
+  </main>
+
+<footer id="footer" class="footer light-background">
+  <div class="container">
+
+    <!-- Top: Marca (izq) + Certificaciones (der) -->
+    <div class="footer-top">
+
+      <!-- Col 1: Marca -->
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo" aria-label="Cosechando Datos - Inicio">
+          <img
+            src="assets/img/logotipo-cosechando-datos.webp"
+            alt="Cosechando Datos - Software agrícola"
+            title="Cosechando Datos - Software agrícola"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
+
+        <p class="footer-tagline">
+          Software agrícola para gestionar costos, labores, cosecha y alertas en un solo lugar.
+        </p>
+      </div>
+
+      <!-- Col 2: Certificaciones -->
+      <div class="footer-certbox" aria-label="Certificaciones">
+        <p class="footer-certbox__text">
+          Certificados para operar con estándares exigentes en el rubro agrícola.
+        </p>
+
+        <div class="footer-certs">
+          <img
+            class="footer-certs__logo"
+            src="assets/img/sag-logotipo-cosechando-datos.webp"
+            alt="Certificación SAG"
+            title="Certificación SAG"
+            loading="lazy"
+            decoding="async"
+            width="140"
+            height="40"
+            onerror="this.style.display='none';"
+          >
+
+          <img
+            class="footer-certs__logo"
+            src="assets/img/globalg.a.p logotipo-cosechando-datos.webp"
+            alt="Certificación Global G.A.P."
+            title="Certificación Global G.A.P."
+            loading="lazy"
+            decoding="async"
+            width="200"
+            height="40"
+            onerror="this.style.display='none';"
+          >
+          
+        </div>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <hr class="footer-divider">
+
+    <!-- Bottom: copyright + redes + créditos (SIN CAMBIOS) -->
+    <div class="footer-bottom">
+
+      <div class="copyright">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Cosechando Datos</strong>
+          <span>Todos los derechos reservados</span>
+        </p>
+      </div>
+
+      <div class="social-links" aria-label="Redes sociales de Cosechando Datos">
+        <a
+          href="https://www.facebook.com/profile.php?id=100087613870488&locale=es_LA"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook de Cosechando Datos"
+          title="Facebook"
+        >
+          <i class="bi bi-facebook" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/cosechandodatos.cl/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram de Cosechando Datos"
+          title="Instagram"
+        >
+          <i class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/cosechando-datos-spa-066a64213/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn de Cosechando Datos"
+          title="LinkedIn"
+        >
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="credits">
+        Diseñado por
+        <a
+          href="https://accinnovations.cl/"
+          target="_blank"
+          rel="noopener"
+          title="Acc Innovations"
+        >
+          Acc Innovations
+        </a>
+      </div>
+
+    </div><!-- /footer-bottom -->
+
+  </div>
+</footer>
+
+
+
+
+
+  <!-- WhatsApp Button -->
+<a 
+  href="https://wa.me/56956686855?text=Hola%2C%20tengo%20inter%C3%A9s%20en%20contratar%20el%20software"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+>
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+    alt="WhatsApp"
+  >
+</a>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
