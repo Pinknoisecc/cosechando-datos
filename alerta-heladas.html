@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Alerta de heladas agrícola | Monitoreo climático en tiempo real | Cosechando Datos</title>
+  <meta name="description" content="Sistema de alerta de heladas agrícola con monitoreo climático en tiempo real. Sensores de temperatura, viento, humedad y alertas por WhatsApp para proteger tu huerto.">
+  <meta name="keywords" content="alerta de heladas agrícola, heladas agrícolas, monitoreo climático agrícola, sensores de temperatura agrícola, estación meteorológica agrícola, alerta heladas huerto, sistema de alerta de heladas, clima agrícola en tiempo real">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img 
+        src="assets/img/logotipo-cosechando-datos.webp" 
+        alt="Logotipo Cosechando Datos - Software agrícola"
+        title="Cosechando Datos - Software agrícola de gestión"
+        loading="eager"
+      >
+    </a>
+
+    <!-- NAV -->
+    <div class="d-flex align-items-center gap-3">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./about.html">Nosotros</a></li>
+
+          <li class="dropdown">
+            <a href="#modules">
+              <span>Módulos</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="./control-cosecha.html">Control Cosecha</a></li>
+              <li><a href="./cd-campo.html">CD Campo</a></li>
+              <li><a href="./crp-agricola.html">CRP Agrícola</a></li>
+              <li><a href="./alerta-heladas.html">Alerta Heladas</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+
+          
+
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- CTA HEADER -->
+      <a
+      href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20Cosechando%20Datos"
+      class="btn-cta-primary btn-header-cta d-none d-xl-inline-flex"
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar demo del software agrícola por WhatsApp"
+      title="Agendar demo del software agrícola"
+    >
+      Agendar prueba
+    </a>
+    </div>
+  </div>
+</header>
+
+
+  <main class="main">
+
+<!-- =========================
+     HERO | CRP ALERTA HELADAS
+     ========================= -->
+<section id="hero-heladas" class="hero hero-alerta-heladas section" role="banner" aria-label="CRP - Monitoreo de temperaturas y alerta de heladas">
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="container hero-inner position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-5 align-items-center">
+
+      <!-- COPY -->
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+
+        <div class="hero-badge mb-3">
+          <span class="badge rounded-pill text-bg-light border" title="Monitoreo y alertas críticas en terreno">
+            CRP · Monitoreo de temperaturas y alerta de heladas
+          </span>
+        </div>
+
+        <h1>Recibe alertas de heladas a tiempo y protege tu producción</h1>
+
+        <p class="hero-lead">
+          Sensores de alta gama vigilan tu huerto por ti. Recibe actualizaciones cada 10 minutos y alertas críticas
+          por llamada y WhatsApp justo cuando la temperatura cae, para reaccionar a tiempo y salvar tu cosecha.
+          Además, obtén automáticamente Horas Frío, Porciones de Frío y Grados Día para una gestión fenológica de precisión
+          durante toda la temporada.
+        </p>
+
+        <div class="hero-ctas d-flex flex-wrap gap-3 align-items-center">
+          <a
+            href="#contacto"
+            class="btn-cta-primary btn-get-started"
+            aria-label="Solicitar una demo del módulo CRP Alerta Heladas"
+            title="Solicitar demo CRP Alerta Heladas"
+          >
+            Solicitar demo
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=cf4Oh8LV0Is"
+            class="glightbox btn-watch-video d-flex align-items-center"
+            aria-label="Ver video demostrativo del módulo CRP Alerta Heladas"
+            title="Ver cómo funciona CRP Alerta Heladas"
+          >
+            <i class="bi bi-play-circle"></i><span>Ver cómo funciona</span>
+          </a>
+        </div>
+
+        <!-- Trust line -->
+        <ul class="hero-trust list-inline small mt-4 mb-0" aria-label="Beneficios clave de CRP Alerta Heladas">
+          <li class="list-inline-item"><i class="bi bi-arrow-repeat me-1" aria-hidden="true"></i>Actualizaciones cada 10 minutos</li>
+          <li class="list-inline-item"><i class="bi bi-whatsapp me-1" aria-hidden="true"></i>Alertas por llamada y WhatsApp</li>
+          <li class="list-inline-item"><i class="bi bi-graph-up me-1" aria-hidden="true"></i>Indicadores fenológicos automáticos</li>
+          <li class="list-inline-item"><i class="bi bi-shield-check me-1" aria-hidden="true"></i>Sensores de alta gama en terreno</li>
+        </ul>
+
+      </div>
+
+      <!-- VISUAL -->
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img
+          src="assets/img/alerta-heladas-movil.png"
+          class="img-fluid hero-visual"
+          alt="Monitoreo de temperatura y alertas de heladas con sensores, llamadas y WhatsApp para proteger tu huerto"
+          title="CRP: monitoreo de temperaturas y alerta de heladas"
+          loading="eager"
+          decoding="async"
+          width="400"
+          height="520"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+
+<!-- =========================
+     ICON BOXES (beneficios CRP Alerta Heladas)
+     ========================= -->
+<section id="hero-beneficios-heladas" class="hero-icon-boxes section" aria-label="Beneficios principales de CRP Alerta Heladas">
+  <div class="container" data-aos="fade-up" data-aos-delay="200">
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-thermometer-half"></i>
+          </div>
+          <h3 class="title">Monitoreo en tiempo real</h3>
+          <p>
+            Visualiza la temperatura del huerto con seguimiento constante para anticiparte a riesgos.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-telephone-outbound"></i>
+          </div>
+          <h3 class="title">Alertas críticas al instante</h3>
+          <p>
+            Recibe llamada y WhatsApp cuando la temperatura cae a umbral crítico, en el momento exacto.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-alarm"></i>
+          </div>
+          <h3 class="title">Margen para reaccionar</h3>
+          <p>
+            Gana tiempo para activar medidas antiheladas y proteger tu producción antes del daño.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h3 class="title">Indicadores automáticos</h3>
+          <p>
+            Horas Frío, Porciones de Frío y Grados Día calculados automáticamente para gestión fenológica de precisión.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- CERTIFICACIONES / TRUST BAR -->
+<section class="certifications" aria-label="Certificaciones">
+  <div class="container certifications__inner" data-aos="fade-up">
+
+    <img
+      class="certifications__logo"
+      src="assets/img/sag-logotipo-cosechando-datos.webp"
+      alt="Certificación SAG"
+      title="Certificación SAG"
+      loading="lazy"
+      decoding="async"
+      width="140"
+      height="40"
+      onerror="this.style.display='none';"
+    >
+
+    <img
+      class="certifications__logo"
+      src="assets/img/globalg.a.p logotipo-cosechando-datos.webp"
+      alt="Certificación Global G.A.P."
+      title="Certificación Global G.A.P."
+      loading="lazy"
+      decoding="async"
+      width="200"
+      height="40"
+      onerror="this.style.display='none';"
+    >
+
+  </div>
+</section>
+
+
+
+
+<!-- =========================
+     HOW IT WORKS SECTION | CRP ALERTA HELADAS
+     ========================= -->
+<section id="como-funciona-heladas" class="how-it-works section">
+  <div class="container">
+
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">¿Cómo funciona CRP Alerta Heladas?</span>
+      <h2>
+        Así monitoreas el clima de tu huerto y te anticipas a las
+        <span style="color: #8CC63F;">heladas con datos en tiempo real</span>
+      </h2>
+      <p class="section-lead">
+        Monitoreo continuo de temperatura, humedad, viento y precipitaciones, con alertas críticas
+        e indicadores clave para tomar mejores decisiones agrícolas.
+      </p>
+    </header>
+
+    <div class="steps-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Step 1 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-cloud-sun"></i>
+          </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 1</span>
+            <h3 class="step-title">Instalamos sensores y monitoreamos el clima</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          Sensores de alta gama registran continuamente las condiciones climáticas directamente en tu huerto,
+          entregando información precisa y confiable durante toda la temporada.
+        </p>
+
+        <ul class="step-bullets" aria-label="Variables monitoreadas">
+          <li><i class="bi bi-check2"></i> Temperatura y variaciones térmicas</li>
+          <li><i class="bi bi-check2"></i> Humedad actual y punto de rocío</li>
+          <li><i class="bi bi-check2"></i> Velocidad y orientación del viento</li>
+          <li><i class="bi bi-check2"></i> Cantidad de agua caída y probabilidad de lluvia</li>
+        </ul>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-thermometer-snow"></i>
+          </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 2</span>
+            <h3 class="step-title">Alertas de heladas en el momento exacto</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          El sistema analiza los datos y envía alertas críticas cuando la temperatura alcanza niveles de riesgo,
+          permitiéndote reaccionar a tiempo para proteger tu producción.
+        </p>
+
+        <ul class="step-bullets" aria-label="Sistema de alertas">
+          <li><i class="bi bi-check2"></i> Alertas por llamada telefónica y WhatsApp</li>
+          <li><i class="bi bi-check2"></i> Actualizaciones automáticas cada 10 minutos</li>
+          <li><i class="bi bi-check2"></i> Avisos justo cuando la temperatura cae</li>
+        </ul>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 3</span>
+            <h3 class="step-title">Decisiones agrícolas mejor informadas</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          Además de las alertas, el sistema entrega indicadores climáticos y fenológicos clave
+          para optimizar aplicaciones, riego y planificación productiva.
+        </p>
+
+        <ul class="step-bullets" aria-label="Indicadores y beneficios">
+          <li><i class="bi bi-check2"></i> Horas Frío, Porciones de Frío y Grados Día automáticos</li>
+          <li><i class="bi bi-check2"></i> Mejor planificación de aplicaciones según clima y viento</li>
+          <li><i class="bi bi-check2"></i> Optimización del riego según lluvias y humedad</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <!-- CTA integrado -->
+    <div class="how-cta" data-aos="fade-up" data-aos-delay="150">
+      <div class="how-cta__content">
+        <h3>¿Quieres ver CRP Alerta Heladas aplicado a tu huerto?</h3>
+        <p>
+          En una demo te mostramos cómo el sistema monitorea el clima, envía alertas y entrega
+          información clave para proteger tu producción y optimizar decisiones en terreno.
+        </p>
+        <small>Respuesta rápida en horario laboral · Demo sin compromiso</small>
+      </div>
+
+      <div class="how-cta__actions">
+        <a
+          class="how-cta__btn btn-cta-primary"
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20CRP%20Alerta%20Heladas."
+          target="_blank"
+          rel="noopener"
+          title="Agendar demo por WhatsApp"
+          aria-label="Agendar demo por WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Agendar demo por WhatsApp
+        </a>
+
+        <span class="how-cta__hint">
+          Ideal para resolver dudas y ver el sistema aplicado a tu realidad climática.
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =========================
+     CRP: PROBLEMAS vs SOLUCIÓN (Clima, heladas, aplicaciones y riego)
+     ========================= -->
+<section id="crp-pain-solution" class="pain-solution section" aria-labelledby="crpPainSolutionTitle">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">CRP Alerta Heladas</span>
+      <h2 id="crpPainSolutionTitle">
+        Si el clima te toma por sorpresa en el <strong>día a día del huerto</strong>, aquí tienes el
+        <span style="color: #8CC63F;">control</span>
+      </h2>
+      <p class="section-lead">
+        Cuando dependes del pronóstico general o de revisar a último minuto, la reacción llega tarde: heladas, viento,
+        humedad y lluvia cambian la decisión. Con CRP, monitoreas en terreno temperatura y sus variaciones, humedad,
+        punto de rocío, viento y precipitaciones, y recibes alertas críticas por llamada y WhatsApp para actuar justo a tiempo.
+      </p>
+    </header>
+
+    <!-- Grid: Dolor vs Solución -->
+    <div class="row g-4 align-items-stretch mt-3" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Columna: Problemas -->
+      <div class="col-lg-6">
+        <div class="ps-card ps-card--pain h-100">
+          <div class="ps-card__head">
+            <div class="ps-card__icon" aria-hidden="true">
+              <i class="bi bi-x-circle"></i>
+            </div>
+            <div>
+              <h3 class="ps-card__title">Lo que suele fallar cuando dependes del “pronóstico”</h3>
+              <p class="ps-card__subtitle mb-0">
+                Señales típicas cuando las decisiones se toman sin datos en terreno o cuando la información llega tarde.
+              </p>
+            </div>
+          </div>
+
+          <ul class="ps-list" aria-label="Problemas comunes al gestionar clima y heladas en el huerto">
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Heladas detectadas tarde</strong>
+                <span>Te enteras cuando el daño ya empezó o cuando la temperatura baja demasiado rápido.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Pronóstico general que no representa tu huerto</strong>
+                <span>La estación más cercana no refleja microclimas por cuartel o sector.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Decisiones de aplicación sin variables clave</strong>
+                <span>Sin viento, humedad y punto de rocío, la aplicación pierde eficiencia o se arriesga deriva.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Riego poco optimizado por falta de lluvia real</strong>
+                <span>No hay registro confiable de agua caída ni lectura práctica para ajustar el riego.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Datos dispersos entre apps, grupos y “me dijeron”</strong>
+                <span>Se revisa en distintas fuentes y no queda historial para comparar o aprender temporada a temporada.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Sin indicadores para planificación fenológica</strong>
+                <span>Horas Frío, Porciones y Grados Día se calculan tarde o no se calculan.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Columna: Solución -->
+      <div class="col-lg-6">
+        <div class="ps-card ps-card--solution h-100">
+          <div class="ps-card__head">
+            <div class="ps-card__icon" aria-hidden="true">
+              <i class="bi bi-check-circle"></i>
+            </div>
+            <div>
+              <h3 class="ps-card__title">Cómo CRP te da control climático en terreno</h3>
+              <p class="ps-card__subtitle mb-0">
+                Monitoreo completo + alertas críticas + variables clave para decisiones agrícolas más seguras.
+              </p>
+            </div>
+          </div>
+
+          <ul class="ps-list" aria-label="Soluciones de CRP para monitoreo climático y alerta de heladas">
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Monitoreo en terreno, continuo y confiable</strong>
+                <span>Temperatura y variaciones, humedad, punto de rocío, viento y precipitaciones.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Alertas críticas para reaccionar a tiempo</strong>
+                <span>Llamada y WhatsApp justo cuando la temperatura cae a umbral crítico.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Actualizaciones automáticas cada 10 minutos</strong>
+                <span>Seguimiento constante para tomar decisiones con margen antes del daño.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Mejores aplicaciones con datos reales del momento</strong>
+                <span>Viento, humedad y punto de rocío para decidir cuándo aplicar con mayor seguridad.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Optimización de riego con precipitación y probabilidad de lluvia</strong>
+                <span>Ajusta riego con agua caída real y anticipación para evitar excesos o déficits.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Indicadores fenológicos automáticos</strong>
+                <span>Horas Frío, Porciones de Frío y Grados Día durante toda la temporada.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA suave -->
+    <div class="ps-cta mt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="ps-cta__content">
+        <h3 class="mb-1">¿Quieres anticiparte a heladas y decidir con datos reales en tu huerto?</h3>
+        <p class="mb-0">
+          Te mostramos cómo CRP monitorea tus variables climáticas en terreno y te alerta a tiempo para proteger producción,
+          optimizar aplicaciones y ajustar riego.
+        </p>
+      </div>
+
+      <div class="ps-cta__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20CRP%20Alerta%20Heladas%20para%20monitoreo%20clim%C3%A1tico%20y%20alertas%20cr%C3%ADticas."
+          class="btn-cta-primary ps-cta__btn"
+          target="_blank"
+          rel="noopener"
+          aria-label="Evaluar CRP Alerta Heladas en WhatsApp"
+          title="Evaluar CRP Alerta Heladas en WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Evaluar en WhatsApp
+        </a>
+
+        <small class="ps-cta__hint">Respuesta rápida en horario laboral · Sin compromiso</small>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- =========================
+     CRP ALERTA HELADAS: FLUJO (3 pasos)
+     ========================= -->
+<section id="crp-heladas-flujo" class="harvest-flow section" aria-labelledby="crpHeladasFlowTitle">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="harvest-flow__header text-center" data-aos="fade-up">
+      <h2 id="crpHeladasFlowTitle" class="harvest-flow__title" style="color: white;">
+        CRP Alerta Heladas en tiempo real
+      </h2>
+      <p class="harvest-flow__lead">
+        Un flujo simple para monitorear el clima de tu huerto, anticiparte a heladas y tomar mejores decisiones con datos confiables:
+        temperatura, humedad, viento y precipitaciones.
+      </p>
+    </header>
+
+    <!-- Steps -->
+    <div class="harvest-flow__steps" style="--icon-size: 74px;" data-aos="fade-up" data-aos-delay="100" role="list">
+
+      <!-- Step 1 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-thermometer-snow"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Monitoreo climático en terreno</h3>
+        <p class="harvest-step__text">
+          Sensores de alta gama registran temperatura y sus variaciones, humedad, punto de rocío, viento (velocidad y dirección)
+          y precipitaciones directamente en tu huerto.
+        </p>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-arrow-repeat"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Actualizaciones cada 10 minutos + indicadores</h3>
+        <p class="harvest-step__text">
+          Recibe lecturas automáticas cada 10 minutos y obtén indicadores clave como Horas Frío, Porciones de Frío y Grados Día
+          para planificar con precisión durante toda la temporada.
+        </p>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-telephone-outbound"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Alertas críticas para actuar a tiempo</h3>
+        <p class="harvest-step__text">
+          Cuando la temperatura cae a umbral crítico, el sistema te alerta por llamada y WhatsApp para reaccionar con margen
+          y proteger tu producción en el momento exacto.
+        </p>
+      </article>
+
+    </div>
+
+    <!-- Micro CTA -->
+    <div class="harvest-flow__cta" data-aos="fade-up" data-aos-delay="150">
+      <p class="harvest-flow__cta-text mb-0">
+        ¿Quieres ver este flujo aplicado a tu huerto y tu realidad climática?
+      </p>
+
+      <a
+        href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20CRP%20Alerta%20Heladas%20para%20monitoreo%20clim%C3%A1tico%20en%20tiempo%20real%20(con%20alertas%20por%20WhatsApp%20y%20llamada)."
+        class="btn-cta-primary harvest-flow__cta-btn"
+        target="_blank"
+        rel="noopener"
+        aria-label="Ver flujo de CRP Alerta Heladas en WhatsApp"
+        title="Ver flujo de CRP Alerta Heladas en WhatsApp"
+      >
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        Ver en WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     CRP ALERTA HELADAS: BENEFICIOS
+     ========================= -->
+<section id="crp-heladas-beneficios" class="harvest-benefits section" aria-labelledby="crpHeladasBenefitsTitle">
+  <div class="container">
+
+    <div class="harvest-benefits__wrap" data-aos="fade-up">
+
+      <!-- Left: copy + highlight -->
+      <div class="harvest-benefits__intro">
+        <span class="harvest-benefits__kicker">Resultados en la gestión climática del huerto</span>
+
+        <h2 id="crpHeladasBenefitsTitle" class="harvest-benefits__title">
+          Qué cambia cuando gestionas el clima del huerto con
+          <span class="harvest-benefits__accent">datos</span>
+        </h2>
+
+        <p class="harvest-benefits__lead">
+          El valor no está en “tener sensores”, sino en contar con información climática clara y oportuna para actuar a tiempo:
+          menos pérdidas por heladas, mejores aplicaciones y riego optimizado con datos reales en terreno.
+        </p>
+
+        <!-- Highlight card -->
+        <div class="harvest-benefits__highlight" role="note" aria-label="Beneficio destacado de CRP Alerta Heladas">
+          <div class="harvest-benefits__highlight-icon" aria-hidden="true">
+            <i class="bi bi-lightning-charge"></i>
+          </div>
+
+          <div class="harvest-benefits__highlight-content">
+            <h3 class="harvest-benefits__highlight-title">Anticiparte antes de que el daño ocurra</h3>
+            <p class="harvest-benefits__highlight-text mb-0">
+              Con monitoreo continuo y alertas críticas, detectas riesgos de heladas y condiciones desfavorables
+              durante la jornada y actúas antes de que se conviertan en pérdidas productivas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Secondary CTA -->
+        <div class="harvest-benefits__actions">
+          <a
+            href="https://wa.me/56956686855?text=Hola%2C%20quiero%20entender%20los%20beneficios%20de%20CRP%20Alerta%20Heladas%20para%20gestionar%20el%20clima%20de%20mi%20huerto."
+            class="btn-cta-primary harvest-benefits__btn"
+            target="_blank"
+            rel="noopener"
+            aria-label="Evaluar beneficios de CRP Alerta Heladas en WhatsApp"
+            title="Evaluar beneficios de CRP Alerta Heladas en WhatsApp"
+          >
+            <i class="bi bi-whatsapp"></i>
+            Evaluar beneficios en WhatsApp
+          </a>
+
+          <p class="harvest-benefits__hint mb-0">
+            Te respondemos rápido en horario laboral · Sin compromiso
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: benefit grid -->
+      <div class="harvest-benefits__grid" role="list" aria-label="Beneficios de CRP Alerta Heladas">
+
+        <!-- Benefit 1 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-clock-history"></i></span>
+            <h3 class="benefit-card__title">Revisión climática diaria sin esfuerzo</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Visualizas temperatura, humedad, viento y precipitaciones del día sin revisar múltiples fuentes o apps.
+          </p>
+        </article>
+
+        <!-- Benefit 2 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-thermometer-snow"></i></span>
+            <h3 class="benefit-card__title">Menos pérdidas por heladas</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Recibes alertas críticas a tiempo para activar medidas y proteger tu producción antes del daño.
+          </p>
+        </article>
+
+        <!-- Benefit 3 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-wind"></i></span>
+            <h3 class="benefit-card__title">Mejores decisiones de aplicación</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Evalúas viento, humedad y punto de rocío para aplicar en condiciones más seguras y eficientes.
+          </p>
+        </article>
+
+        <!-- Benefit 4 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-cloud-rain"></i></span>
+            <h3 class="benefit-card__title">Riego optimizado con datos reales</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Ajustas riego según agua caída y probabilidad de lluvia, evitando excesos o déficit hídrico.
+          </p>
+        </article>
+
+        <!-- Benefit 5 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-diagram-3"></i></span>
+            <h3 class="benefit-card__title">Indicadores fenológicos automáticos</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Horas Frío, Porciones de Frío y Grados Día calculados automáticamente durante toda la temporada.
+          </p>
+        </article>
+
+        <!-- Benefit 6 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-shield-check"></i></span>
+            <h3 class="benefit-card__title">Decisiones con mayor confianza</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Menos intuición y más evidencia climática para planificar, reaccionar y sostener una operación productiva.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- =========================
+     USO REAL EN TERRENO (Videos clientes)
+     ========================= -->
+<section id="uso-real" class="real-use section" aria-label="Uso real en terreno">
+  <div id= "testimonials" class="container">
+
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">Uso real en terreno</span>
+      <h2>Productores que ya trabajan con Cosechando <span style="color: #8CC63F;">Datos</span></h2>
+      <p class="section-lead">
+        No son demos ni simulaciones. Son operaciones agrícolas reales usando el sistema día a día.
+      </p>
+    </header>
+
+    <div class="real-use-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Video 1 -->
+      <article class="real-use-card">
+        <a
+          href="https://youtu.be/czIPrYXvrRQ"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: control de cosecha en operación real"
+          title="Ver video de cliente: control de cosecha"
+          data-gallery="realuse"
+        >
+          <!-- Opción A: miniatura desde YouTube (no necesitas archivo local) -->
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-2.webp"
+            alt="Video de cliente usando Cosechando Datos para control de cosecha"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Productores usando el sistema día a día</h3>
+          <p>Registro y supervisión diaria con productividad por cuadrilla y cuartel.</p>
+        </div>
+      </article>
+
+      <!-- Video 2 -->
+      <article class="real-use-card">
+        <a
+          href="https://www.youtube.com/watch?v=tl9tKoB2B5Y"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: registro desde celular en terreno"
+          title="Ver video de cliente: registro en terreno"
+          data-gallery="realuse"
+        >
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-1.webp"
+            alt="Video de cliente registrando labores y evidencias desde el celular"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Registro directo en terreno</h3>
+          <p>Labores, cosecha y evidencias desde web o celular, sin doble digitación.</p>
+        </div>
+      </article>
+
+      <!-- Video 3 -->
+      <article class="real-use-card">
+        <a
+          href="https://www.youtube.com/watch?v=vkn7ZJQQZ7k"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: costos y decisiones con datos"
+          title="Ver video de cliente: costos y decisiones"
+          data-gallery="realuse"
+        >
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-3.webp"
+            alt="Video de cliente visualizando costos agrícolas y reportes en Cosechando Datos"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Decisiones con datos reales</h3>
+          <p>Costos por centro de costo y reportes por temporada para mejorar rentabilidad.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="real-use-cta" data-aos="fade-up" data-aos-delay="150">
+      <div class="real-use-cta__text">
+        <h3>¿Quieres ver cómo se aplicaría en tu campo?</h3>
+        <p>Te mostramos el flujo completo con ejemplos reales según tu operación.</p>
+        <small>Respuesta rápida en horario laboral · Demo sin compromiso</small>
+      </div>
+
+      <div class="real-use-cta__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20ver%20cómo%20se%20usa%20Cosechando%20Datos%20en%20mi%20campo"
+          class="btn-cta-primary"
+          target="_blank"
+          rel="noopener"
+          aria-label="Agendar demo por WhatsApp"
+          title="Agendar demo por WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Agendar demo por WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Faq Section | CRP Alerta Heladas -->
+<section id="faq" class="faq section light-background">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Intro -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="content px-xl-5">
+          <h3><span>Preguntas </span><strong>Frecuentes</strong></h3>
+          <p>
+            Respondemos las dudas más comunes antes de comenzar.
+            Si tu pregunta no está aquí, la resolvemos contigo en una demo.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ items -->
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-container">
+
+          <!-- 1 -->
+          <div class="faq-item faq-active">
+            <h3>
+              <span class="num">1.</span>
+              <span>¿Qué mide el sistema además de la temperatura para alertas de heladas?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Además de la temperatura y sus variaciones, el sistema entrega humedad actual, punto de rocío,
+                velocidad y orientación del viento. También incorpora información de agua caída y probabilidad de lluvia,
+                útil para optimizar aplicaciones y riego con datos más completos.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 2 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">2.</span>
+              <span>¿Cada cuánto se actualiza la información y cómo recibo las alertas?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Recibes actualizaciones automáticas cada 10 minutos. Cuando la temperatura cae a umbral crítico,
+                el sistema envía alertas mediante llamada telefónica y WhatsApp, para que puedas reaccionar en el momento exacto.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 3 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">3.</span>
+              <span>¿Puedo configurar los umbrales de alerta según mi cultivo o realidad de campo?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. Los umbrales de alerta se ajustan según tu realidad (cultivo, zona, objetivos y manejo).
+                En la demo revisamos tus condiciones y definimos el criterio para que las alertas sean útiles y accionables.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 4 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">4.</span>
+              <span>¿Cómo me ayuda para tomar mejores decisiones de aplicaciones (por ejemplo, agroquímicos)?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Con variables como viento (velocidad y dirección), humedad y punto de rocío puedes evaluar condiciones más seguras
+                y eficientes para aplicar. Eso ayuda a reducir deriva, mejorar el aprovechamiento y decidir con menos incertidumbre.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 5 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">5.</span>
+              <span>¿Cómo aporta a la optimización del riego?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Al contar con registro de agua caída y probabilidad de lluvia, puedes ajustar el riego con mejor criterio,
+                evitando excesos o déficit. La idea es tomar decisiones basadas en lo que realmente ocurre en tu huerto.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 6 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">6.</span>
+              <span>¿El sistema entrega indicadores como Horas Frío, Porciones de Frío y Grados Día?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. Obtienes automáticamente Horas Frío, Porciones de Frío y Grados Día para apoyar la gestión fenológica
+                y la planificación técnica durante toda la temporada, sin cálculos manuales ni planillas.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 7 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">7.</span>
+              <span>¿Qué pasa si hay cortes de señal o conectividad en el campo?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Depende de la configuración y cobertura del lugar. En la evaluación revisamos tu realidad de conectividad
+                y definimos la implementación para asegurar continuidad en el monitoreo y el envío de alertas.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 8 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">8.</span>
+              <span>¿Incluyen soporte y acompañamiento para implementar el sistema correctamente?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. Acompañamos la implementación y damos soporte para que el sistema quede bien configurado
+                y sea útil en la operación real. La meta es que tengas alertas confiables y datos claros para decidir a tiempo.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- /Faq Section -->
+
+
+
+<!-- =========================
+     CTA FINAL – CRP ALERTA HELADAS
+     ========================= -->
+<section id="cta-final" class="cta-final section light-background">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="cta-final__box">
+
+      <div class="cta-final__content">
+        <h2>¿Quieres anticiparte a las heladas en tu huerto?</h2>
+        <p>
+          Agenda una demo y revisamos cómo CRP monitorea temperatura, humedad, viento y precipitaciones en terreno,
+          envía alertas críticas por llamada y WhatsApp, y entrega indicadores clave para proteger tu producción
+          y decidir a tiempo.
+        </p>
+        <small>
+          Respuesta rápida en horario laboral · Demo sin compromiso
+        </small>
+      </div>
+
+      <div class="cta-final__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20CRP%20Alerta%20Heladas%20para%20monitoreo%20clim%C3%A1tico%20y%20alertas%20cr%C3%ADticas%20en%20mi%20huerto."
+          class="btn-cta-primary"
+          target="_blank"
+          rel="noopener"
+          aria-label="Agendar demo de CRP Alerta Heladas por WhatsApp"
+          title="Agendar demo de CRP Alerta Heladas"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Ver CRP en mi huerto
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /CTA FINAL – CRP ALERTA HELADAS -->
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <div>
+      <span>¿Tienes dudas?</span>
+      <span class="description-title">Hablemos de tu operación agrícola</span>
+    </div>
+    <p class="section-subtitle">
+      Nuestro equipo te orienta según tu campo, temporada y objetivos productivos.
+    </p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <!-- Info Column -->
+      <div class="col-lg-4">
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Ubicación</h3>
+            <p>Los Niches, Curicó, Chile</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Teléfono</h3>
+            <p>
+              +56956686855
+            </p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email</h3>
+            <p>
+              contacto@cosechandodatos.cl   
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Info Column -->
+
+      <!-- Form Column -->
+      <div class="col-lg-8">
+
+        <form
+          action="forms/contact.php"
+          method="post"
+          class="php-email-form"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Nombre y apellido"
+                required
+              >
+            </div>
+
+            <div class="col-md-6">
+              <input
+                type="tel"
+                name="phone"
+                class="form-control"
+                placeholder="Teléfono de contacto"
+                required
+              >
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              >
+            </div>
+
+            <div class="col-md-12">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="6"
+                placeholder="Cuéntanos brevemente sobre tu campo, cultivo o necesidad"
+                required
+              ></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+
+              <div class="loading">Enviando mensaje…</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                ¡Mensaje enviado! Nuestro equipo se pondrá en contacto contigo.
+              </div>
+
+              <button type="submit">
+                Enviar consulta
+              </button>
+
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+      <!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /Contact Section -->
+
+
+  </main>
+
+<footer id="footer" class="footer light-background">
+  <div class="container">
+
+    <!-- Top: Marca (izq) + Certificaciones (der) -->
+    <div class="footer-top">
+
+      <!-- Col 1: Marca -->
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo" aria-label="Cosechando Datos - Inicio">
+          <img
+            src="assets/img/logotipo-cosechando-datos.webp"
+            alt="Cosechando Datos - Software agrícola"
+            title="Cosechando Datos - Software agrícola"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
+
+        <p class="footer-tagline">
+          Software agrícola para gestionar costos, labores, cosecha y alertas en un solo lugar.
+        </p>
+      </div>
+
+      <!-- Col 2: Certificaciones -->
+      <div class="footer-certbox" aria-label="Certificaciones">
+        <p class="footer-certbox__text">
+          Certificados para operar con estándares exigentes en el rubro agrícola.
+        </p>
+
+        <div class="footer-certs">
+          <img
+            class="footer-certs__logo"
+            src="assets/img/sag-logotipo-cosechando-datos.webp"
+            alt="Certificación SAG"
+            title="Certificación SAG"
+            loading="lazy"
+            decoding="async"
+            width="140"
+            height="40"
+            onerror="this.style.display='none';"
+          >
+
+          <img
+            class="footer-certs__logo"
+            src="assets/img/globalg.a.p logotipo-cosechando-datos.webp"
+            alt="Certificación Global G.A.P."
+            title="Certificación Global G.A.P."
+            loading="lazy"
+            decoding="async"
+            width="200"
+            height="40"
+            onerror="this.style.display='none';"
+          >
+          
+        </div>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <hr class="footer-divider">
+
+    <!-- Bottom: copyright + redes + créditos (SIN CAMBIOS) -->
+    <div class="footer-bottom">
+
+      <div class="copyright">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Cosechando Datos</strong>
+          <span>Todos los derechos reservados</span>
+        </p>
+      </div>
+
+      <div class="social-links" aria-label="Redes sociales de Cosechando Datos">
+        <a
+          href="https://www.facebook.com/profile.php?id=100087613870488&locale=es_LA"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook de Cosechando Datos"
+          title="Facebook"
+        >
+          <i class="bi bi-facebook" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/cosechandodatos.cl/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram de Cosechando Datos"
+          title="Instagram"
+        >
+          <i class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/cosechando-datos-spa-066a64213/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn de Cosechando Datos"
+          title="LinkedIn"
+        >
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="credits">
+        Diseñado por
+        <a
+          href="https://accinnovations.cl/"
+          target="_blank"
+          rel="noopener"
+          title="Acc Innovations"
+        >
+          Acc Innovations
+        </a>
+      </div>
+
+    </div><!-- /footer-bottom -->
+
+  </div>
+</footer>
+
+
+
+
+
+  <!-- WhatsApp Button -->
+<a 
+  href="https://wa.me/56956686855?text=Hola%2C%20tengo%20inter%C3%A9s%20en%20contratar%20el%20software"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+>
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+    alt="WhatsApp"
+  >
+</a>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

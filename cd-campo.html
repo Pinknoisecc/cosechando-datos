@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gestión de campo agrícola | Control de labores y costos | Cosechando Datos</title>
+  <meta name="description" content="Software de gestión de campo agrícola para registrar labores, controlar costos, supervisar cuadrillas y tomar decisiones con datos reales desde terreno.">
+  <meta name="keywords" content="gestión de campo agrícola, software agrícola de gestión, control de labores agrícolas, control de costos agrícolas, supervisión de cuadrillas agrícolas, registro de labores en terreno, gestión operativa agrícola">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img 
+        src="assets/img/logotipo-cosechando-datos.webp" 
+        alt="Logotipo Cosechando Datos - Software agrícola"
+        title="Cosechando Datos - Software agrícola de gestión"
+        loading="eager"
+      >
+    </a>
+
+    <!-- NAV -->
+    <div class="d-flex align-items-center gap-3">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./about.html">Nosotros</a></li>
+
+          <li class="dropdown">
+            <a href="#modules">
+              <span>Módulos</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="./control-cosecha.html">Control Cosecha</a></li>
+              <li><a href="./cd-campo.html">CD Campo</a></li>
+              <li><a href="./crp-agricola.html">CRP Agrícola</a></li>
+              <li><a href="./alerta-heladas.html">Alerta Heladas</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+
+          
+
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- CTA HEADER -->
+      <a
+      href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20Cosechando%20Datos"
+      class="btn-cta-primary btn-header-cta d-none d-xl-inline-flex"
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar demo del software agrícola por WhatsApp"
+      title="Agendar demo del software agrícola"
+    >
+      Agendar prueba
+    </a>
+    </div>
+  </div>
+</header>
+
+
+  <main class="main">
+
+<!-- =========================
+     HERO | CD CAMPO
+     ========================= -->
+<section id="hero" class="hero hero-cd-campo section" role="banner" aria-label="CD Campo - Gestión digital de labores de huerto">
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="container hero-inner position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-5 align-items-center">
+
+      <!-- COPY -->
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+
+        <div class="hero-badge mb-3">
+          <span class="badge rounded-pill text-bg-light border" title="Plataforma validada en terreno">
+            CD Campo · Gestión digital de labores de huerto
+          </span>
+        </div>
+
+        <h1>Controla las labores de tu huerto en tiempo real, directamente desde terreno</h1>
+
+        <p class="hero-lead">
+          Asigna y registra tratos, raleo, poda y seguimiento fenológico sin planillas ni dobles registros,
+          con datos confiables para tomar decisiones.
+        </p>
+
+        <div class="hero-ctas d-flex flex-wrap gap-3 align-items-center">
+          <a
+            href="#contacto"
+            class="btn-cta-primary btn-get-started"
+            aria-label="Solicitar una demo de CD Campo"
+            title="Solicitar demo de CD Campo"
+          >
+            Solicitar demo
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=cf4Oh8LV0Is"
+            class="glightbox btn-watch-video d-flex align-items-center"
+            aria-label="Ver video demostrativo de CD Campo"
+            title="Ver cómo funciona CD Campo"
+          >
+            <i class="bi bi-play-circle"></i><span>Ver cómo funciona</span>
+          </a>
+        </div>
+
+        <!-- Trust line -->
+        <ul class="hero-trust list-inline small mt-4 mb-0" aria-label="Beneficios clave de CD Campo">
+          <li class="list-inline-item"><i class="bi bi-wifi-off me-1" aria-hidden="true"></i>Funciona con o sin señal</li>
+          <li class="list-inline-item"><i class="bi bi-camera me-1" aria-hidden="true"></i>Evidencias en terreno</li>
+          <li class="list-inline-item"><i class="bi bi-bell me-1" aria-hidden="true"></i>Alertas personalizadas</li>
+          <li class="list-inline-item"><i class="bi bi-headset me-1" aria-hidden="true"></i>Soporte y acompañamiento</li>
+        </ul>
+
+      </div>
+
+      <!-- VISUAL -->
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img
+          src="assets/img/sofrware-agricola-para-controlar-el-campo-4.png"
+          class="img-fluid hero-visual"
+          alt="Interfaz de CD Campo para gestionar labores de huerto, seguimiento fenológico y alertas en terreno"
+          title="CD Campo: gestión digital de labores de huerto"
+          loading="eager"
+          decoding="async"
+          width="560"
+          height="520"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+
+<!-- =========================
+     ICON BOXES (beneficios CD Campo)
+     ========================= -->
+<section id="hero-beneficios" class="hero-icon-boxes section" aria-label="Beneficios principales de CD Campo">
+  <div class="container" data-aos="fade-up" data-aos-delay="200">
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-clipboard-check"></i>
+          </div>
+          <h3 class="title">Gestión de labores en terreno</h3>
+          <p>
+            Asigna, registra y controla tratos, raleo y poda con visibilidad inmediata.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-diagram-3"></i>
+          </div>
+          <h3 class="title">Seguimiento fenológico por cuartel</h3>
+          <p>
+            Lleva el estado del huerto por sector y mejora la planificación operativa.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-exclamation-triangle"></i>
+          </div>
+          <h3 class="title">Anomalías con evidencia y alertas</h3>
+          <p>
+            Registra hallazgos con foto y recibe alertas personalizadas según tu operación.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <div class="icon-box">
+          <div class="icon" aria-hidden="true">
+            <i class="bi bi-file-earmark-text"></i>
+          </div>
+          <h3 class="title">Datos confiables sin planillas</h3>
+          <p>
+            Elimina el papel, reduce errores y centraliza todo en un solo lugar.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CERTIFICACIONES / TRUST BAR -->
+<section class="certifications" aria-label="Certificaciones">
+  <div class="container certifications__inner" data-aos="fade-up">
+
+    <img
+      class="certifications__logo"
+      src="assets/img/sag-logotipo-cosechando-datos.webp"
+      alt="Certificación SAG"
+      title="Certificación SAG"
+      loading="lazy"
+      decoding="async"
+      width="140"
+      height="40"
+      onerror="this.style.display='none';"
+    >
+
+    <img
+      class="certifications__logo"
+      src="assets/img/globalg.a.p logotipo-cosechando-datos.webp"
+      alt="Certificación Global G.A.P."
+      title="Certificación Global G.A.P."
+      loading="lazy"
+      decoding="async"
+      width="200"
+      height="40"
+      onerror="this.style.display='none';"
+    >
+
+  </div>
+</section>
+
+
+
+
+<!-- =========================
+     HOW IT WORKS SECTION | CD CAMPO
+     ========================= -->
+<section id="como-funciona" class="how-it-works section">
+  <div class="container">
+
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">¿Cómo funciona CD Campo?</span>
+      <h2>Así digitalizas las labores del huerto y mantienes el control <span style="color: #8CC63F;">en terreno</span></h2>
+      <p class="section-lead">
+        Asignación de labores, seguimiento fenológico, registro de evidencias y alertas personalizadas para ordenar tu operación diaria.
+      </p>
+    </header>
+
+    <div class="steps-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Step 1 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 1</span>
+            <h3 class="step-title">Configuramos tus labores según tu realidad</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          Definimos cuarteles/sectores, equipos, tipos de labores y reglas de registro para que la información sea consistente desde el día 1.
+        </p>
+
+        <ul class="step-bullets" aria-label="Beneficios del paso 1">
+          <li><i class="bi bi-check2"></i> Estructura por cuartel/sector y calendario de labores</li>
+          <li><i class="bi bi-check2"></i> Parámetros por cuadrilla, responsable o turno</li>
+          <li><i class="bi bi-check2"></i> Reportes y alertas definidos junto a tu equipo</li>
+        </ul>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-phone"></i>
+          </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 2</span>
+            <h3 class="step-title">Registro y evidencias directamente en terreno</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          Tu equipo registra avances, hallazgos y evidencias desde celular o web, sin papel y sin doble digitación.
+        </p>
+
+        <ul class="step-bullets" aria-label="Beneficios del paso 2">
+          <li><i class="bi bi-check2"></i> Menos errores y mayor trazabilidad de lo ejecutado</li>
+          <li><i class="bi bi-check2"></i> Evidencias de anomalías (foto/nota) en el lugar</li>
+          <li><i class="bi bi-check2"></i> Supervisión clara del estado de cada labor</li>
+        </ul>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="step-card">
+        <div class="step-top">
+          <div class="step-icon" aria-hidden="true">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <div class="step-meta">
+            <span class="step-number">Paso 3</span>
+            <h3 class="step-title">Decisiones rápidas con datos confiables</h3>
+          </div>
+        </div>
+
+        <p class="step-text">
+          Visualiza el avance por cuartel, cuadrilla o responsable, identifica cuellos de botella y actúa a tiempo con alertas personalizadas.
+        </p>
+
+        <ul class="step-bullets" aria-label="Beneficios del paso 3">
+          <li><i class="bi bi-check2"></i> Avance de labores por sector, equipo y responsable</li>
+          <li><i class="bi bi-check2"></i> Seguimiento fenológico para planificar mejor</li>
+          <li><i class="bi bi-check2"></i> Menos pérdidas por desorden, omisiones o datos incompletos</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <!-- CTA integrado (conversión) -->
+    <div class="how-cta" data-aos="fade-up" data-aos-delay="150">
+      <div class="how-cta__content">
+        <h3>¿Quieres ver CD Campo funcionando en tu huerto?</h3>
+        <p>En una demo te mostramos el flujo real: configuración, registro en terreno, evidencias y alertas para tu operación diaria.</p>
+        <small>Respuesta rápida en horario laboral · Demo sin compromiso</small>
+      </div>
+
+      <div class="how-cta__actions">
+        <a
+          class="how-cta__btn btn-cta-primary"
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20CD%20Campo%20para%20gesti%C3%B3n%20de%20labores%20de%20huerto."
+          target="_blank"
+          rel="noopener"
+          title="Agendar demo por WhatsApp"
+          aria-label="Agendar demo por WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Agendar demo por WhatsApp
+        </a>
+
+        <span class="how-cta__hint">Ideal para resolver dudas y ver el sistema aplicado a tu operación.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     CD CAMPO: PROBLEMAS vs SOLUCIÓN (Operación diaria)
+     ========================= -->
+<section id="cd-campo-pain-solution" class="pain-solution section" aria-labelledby="cdCampoPainSolutionTitle">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">CD Campo</span>
+      <h2 id="cdCampoPainSolutionTitle">
+        Si esto te pasa en el <strong>día a día del huerto</strong>, aquí tienes el <span style="color: #8CC63F;">control</span>
+      </h2>
+      <p class="section-lead">
+        Cuando la operación depende de papel, planillas y WhatsApp, se pierde trazabilidad, se duplican tareas y las decisiones llegan tarde.
+        Con CD Campo, centralizas las labores, el seguimiento fenológico y las anomalías con datos accesibles desde cualquier dispositivo.
+      </p>
+    </header>
+
+    <!-- Grid: Dolor vs Solución -->
+    <div class="row g-4 align-items-stretch mt-3" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Columna: Problemas -->
+      <div class="col-lg-6">
+        <div class="ps-card ps-card--pain h-100">
+          <div class="ps-card__head">
+            <div class="ps-card__icon" aria-hidden="true">
+              <i class="bi bi-x-circle"></i>
+            </div>
+            <div>
+              <h3 class="ps-card__title">Lo que suele fallar en la gestión diaria</h3>
+              <p class="ps-card__subtitle mb-0">
+                Señales típicas cuando el control depende de planillas, papel, WhatsApp y “lo que me dijeron”.
+              </p>
+            </div>
+          </div>
+
+          <ul class="ps-list" aria-label="Problemas comunes en la gestión diaria del huerto">
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Labores sin trazabilidad real</strong>
+                <span>No queda claro qué se hizo, dónde, cuándo y con qué responsable.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Información dispersa entre papel, fotos y chats</strong>
+                <span>Los datos quedan repartidos y después es imposible consolidar o auditar.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Anomalías que se detectan tarde (o se pierden)</strong>
+                <span>Se reportan tarde, sin evidencia o sin prioridad, y el problema escala.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Duplicación de tareas y confusión en terreno</strong>
+                <span>Dos equipos hacen lo mismo o se omiten labores por falta de control.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Seguimiento fenológico sin consistencia</strong>
+                <span>Se registra “a ojo” o tarde, dificultando planificación y decisiones técnicas.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-x-lg ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Reportes atrasados para la administración</strong>
+                <span>El cierre de jornada depende de que alguien “arme la planilla” y rara vez queda perfecto.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Columna: Solución -->
+      <div class="col-lg-6">
+        <div class="ps-card ps-card--solution h-100">
+          <div class="ps-card__head">
+            <div class="ps-card__icon" aria-hidden="true">
+              <i class="bi bi-check-circle"></i>
+            </div>
+            <div>
+              <h3 class="ps-card__title">Cómo CD Campo ordena tu operación</h3>
+              <p class="ps-card__subtitle mb-0">
+                Control en terreno para asignar, registrar y supervisar labores con trazabilidad, evidencias y alertas.
+              </p>
+            </div>
+          </div>
+
+          <ul class="ps-list" aria-label="Soluciones de CD Campo para gestión de labores de huerto">
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Asignación de labores con seguimiento</strong>
+                <span>Define responsables, cuadrillas y sectores, y visualiza avance en tiempo real.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Registro directo en terreno (web + celular)</strong>
+                <span>Captura lo ejecutado en el momento, sin papel ni transcripción posterior.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Evidencias de anomalías con alertas</strong>
+                <span>Registra hallazgos con foto/nota y recibe alertas personalizadas para actuar a tiempo.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Seguimiento fenológico por cuartel/sector</strong>
+                <span>Registra estados de desarrollo y mejora la planificación técnica y operativa.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Datos consistentes y centralizados</strong>
+                <span>Un solo sistema para evitar “versiones distintas” y decisiones basadas en suposiciones.</span>
+              </div>
+            </li>
+
+            <li>
+              <i class="bi bi-check2 ps-list__mark" aria-hidden="true"></i>
+              <div>
+                <strong>Reportes listos para cerrar la jornada</strong>
+                <span>Consolida avances, pendientes y hallazgos sin depender de planillas sueltas.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA suave -->
+    <div class="ps-cta mt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="ps-cta__content">
+        <h3 class="mb-1">¿Quieres ordenar tu operación diaria con datos confiables?</h3>
+        <p class="mb-0">
+          Te mostramos cómo CD Campo se adapta a tu huerto: sectores, responsables, labores, evidencias, alertas y reportes.
+        </p>
+      </div>
+
+      <div class="ps-cta__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20CD%20Campo%20para%20gesti%C3%B3n%20de%20labores%20de%20huerto%20(con%20seguimiento%20fenol%C3%B3gico%20y%20alertas)."
+          class="btn-cta-primary ps-cta__btn"
+          target="_blank"
+          rel="noopener"
+          aria-label="Evaluar CD Campo en WhatsApp"
+          title="Evaluar CD Campo en WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Evaluar en WhatsApp
+        </a>
+
+        <small class="ps-cta__hint">Respuesta rápida en horario laboral · Sin compromiso</small>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =========================
+     CD CAMPO: FLUJO (3 pasos)
+     ========================= -->
+<section id="cd-campo-flujo" class="harvest-flow section" aria-labelledby="cdCampoFlowTitle">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="harvest-flow__header text-center" data-aos="fade-up">
+      <h2 id="cdCampoFlowTitle" class="harvest-flow__title" style="color: white;">CD Campo en terreno</h2>
+      <p class="harvest-flow__lead">
+        Un flujo simple para asignar, registrar y supervisar labores del huerto con trazabilidad y datos confiables,
+        sin papel ni planillas sueltas.
+      </p>
+    </header>
+
+    <!-- Steps -->
+    <div class="harvest-flow__steps" style="--icon-size: 74px;" data-aos="fade-up" data-aos-delay="100" role="list">
+
+      <!-- Step 1 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-clipboard-check"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Asignar y ordenar labores</h3>
+        <p class="harvest-step__text">
+          Define labores como tratos, raleo, poda e inspecciones por cuartel/sector y asigna responsables o cuadrillas.
+          Todos trabajan con el mismo plan, sin confusiones.
+        </p>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-phone"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Registrar en terreno con evidencia</h3>
+        <p class="harvest-step__text">
+          Registra avances y hallazgos desde celular o web, agrega evidencias (foto/nota) y deja trazabilidad de lo ejecutado.
+          Olvídate del papel y la doble digitación.
+        </p>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="harvest-step" role="listitem">
+        <div class="harvest-step__icon" aria-hidden="true">
+          <i class="bi bi-bell"></i>
+        </div>
+
+        <h3 class="harvest-step__title" style="color: white;">Supervisar y decidir a tiempo</h3>
+        <p class="harvest-step__text">
+          Monitorea el avance por cuartel, responsable o cuadrilla, recibe alertas personalizadas ante anomalías
+          y cierra el día con reportes listos para gestión.
+        </p>
+      </article>
+
+    </div>
+
+    <!-- Micro CTA -->
+    <div class="harvest-flow__cta" data-aos="fade-up" data-aos-delay="150">
+      <p class="harvest-flow__cta-text mb-0">
+        ¿Quieres ver este flujo aplicado a tu operación diaria del huerto?
+      </p>
+
+      <a
+        href="https://wa.me/56956686855?text=Hola%2C%20quiero%20ver%20c%C3%B3mo%20funciona%20CD%20Campo%20para%20gestionar%20labores%20de%20huerto%20(con%20registro%20en%20terreno%2C%20evidencias%20y%20alertas)."
+        class="btn-cta-primary harvest-flow__cta-btn"
+        target="_blank"
+        rel="noopener"
+        aria-label="Ver flujo de CD Campo en WhatsApp"
+        title="Ver flujo de CD Campo en WhatsApp"
+      >
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        Ver en WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     CD CAMPO: CAPTURAS (VISTA MÓVIL)
+     Ubicación recomendada: entre "cd-campo-flujo" y "cd-campo-beneficios"
+     ========================= -->
+<section id="cd-campo-capturas" class="cd-screens section" aria-labelledby="cdScreensTitle">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row align-items-center gy-4">
+
+      <!-- Left: copy -->
+      <div class="col-lg-5">
+        <span class="section-kicker">Vista móvil</span>
+        <h2 id="cdScreensTitle" class="mb-3">Así se ve CD Campo en terreno</h2>
+        <p class="section-lead mb-4">
+          Diseñado para usarse en el huerto desde el celular: opciones claras, botones grandes y flujo simple
+          para registrar conteos fenológicos y mantener la trazabilidad por cuartel/sector.
+        </p>
+
+        <ul class="list-unstyled cd-screens__bullets mb-0" aria-label="Beneficios visibles en la app móvil">
+          <li class="d-flex gap-2 mb-2">
+            <i class="bi bi-check2" aria-hidden="true"></i>
+            <span>Conteos fenológicos por etapa (yemas, flores, frutos y más).</span>
+          </li>
+          <li class="d-flex gap-2 mb-2">
+            <i class="bi bi-check2" aria-hidden="true"></i>
+            <span>Registro directo en terreno, sin planillas ni doble digitación.</span>
+          </li>
+          <li class="d-flex gap-2 mb-2">
+            <i class="bi bi-check2" aria-hidden="true"></i>
+            <span>Información ordenada para supervisión y decisiones durante la jornada.</span>
+          </li>
+          <li class="d-flex gap-2">
+            <i class="bi bi-check2" aria-hidden="true"></i>
+            <span>Flujo pensado para equipos: rápido de adoptar y fácil de usar.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: screenshot -->
+      <div class="col-lg-7">
+        <figure class="cd-screens__figure m-0" aria-label="Captura de la aplicación CD Campo en móvil">
+          <div class="cd-screens__mockup" role="img" aria-label="Pantalla móvil con CD Campo">
+            <img
+              src="assets/img/software-cd-campo.png"
+              class="img-fluid cd-screens__img"
+              alt="Pantalla móvil de CD Campo: Conteos fenológicos con opciones de conteo de plantas, dardos, yemas, flores y frutos"
+              title="CD Campo en móvil: conteos fenológicos en terreno"
+              loading="lazy"
+              decoding="async"
+              width="720"
+              height="1200"
+            >
+          </div>
+
+          <figcaption class="small mt-3 cd-screens__caption">
+            Ejemplo de pantalla móvil: selección rápida de conteos fenológicos para registrar en terreno.
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+    <!-- Micro CTA -->
+    <div class="cd-screens__cta d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3 mt-4"
+         data-aos="fade-up" data-aos-delay="100">
+      <p class="mb-0">
+        ¿Quieres ver estas pantallas aplicadas a tu huerto y tu forma real de trabajar?
+      </p>
+
+      <a
+        href="https://wa.me/56956686855?text=Hola%2C%20quiero%20ver%20CD%20Campo%20en%20m%C3%B3vil%20aplicado%20a%20mi%20huerto%20(con%20conteos%20fenol%C3%B3gicos%20y%20registro%20en%20terreno)."
+        class="btn-cta-primary"
+        target="_blank"
+        rel="noopener"
+        aria-label="Ver CD Campo en móvil por WhatsApp"
+        title="Ver CD Campo en móvil por WhatsApp"
+      >
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        Ver en WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- /CD CAMPO: CAPTURAS (VISTA MÓVIL) -->
+
+
+
+
+<!-- =========================
+     CD CAMPO: BENEFICIOS (diferente al flujo)
+     Diseño: panel blanco + highlight + cards
+     ========================= -->
+<section id="cd-campo-beneficios" class="harvest-benefits section" aria-labelledby="cdCampoBenefitsTitle">
+  <div class="container">
+
+    <div class="harvest-benefits__wrap" data-aos="fade-up">
+
+      <!-- Left: copy + highlight -->
+      <div class="harvest-benefits__intro">
+        <span class="harvest-benefits__kicker">Resultados en la operación diaria</span>
+
+        <h2 id="cdCampoBenefitsTitle" class="harvest-benefits__title">
+          Qué cambia cuando gestionas el huerto con <span class="harvest-benefits__accent">datos</span>
+        </h2>
+
+        <p class="harvest-benefits__lead">
+          El valor no está en “digitalizar por digitalizar”, sino en tener claridad diaria para actuar a tiempo:
+          menos omisiones, más trazabilidad y decisiones basadas en hechos en terreno.
+        </p>
+
+        <!-- Highlight card (sin números inventados) -->
+        <div class="harvest-benefits__highlight" role="note" aria-label="Beneficio destacado de CD Campo">
+          <div class="harvest-benefits__highlight-icon" aria-hidden="true">
+            <i class="bi bi-lightning-charge"></i>
+          </div>
+
+          <div class="harvest-benefits__highlight-content">
+            <h3 class="harvest-benefits__highlight-title">Corregir antes de que cueste</h3>
+            <p class="harvest-benefits__highlight-text mb-0">
+              Con registros y alertas en terreno, detectas desvíos durante la jornada y ajustas antes de que se conviertan en pérdidas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Secondary CTA -->
+        <div class="harvest-benefits__actions">
+          <a
+            href="https://wa.me/56956686855?text=Hola%2C%20quiero%20entender%20los%20beneficios%20de%20CD%20Campo%20para%20gesti%C3%B3n%20de%20labores%20de%20huerto."
+            class="btn-cta-primary harvest-benefits__btn"
+            target="_blank"
+            rel="noopener"
+            aria-label="Evaluar beneficios de CD Campo en WhatsApp"
+            title="Evaluar beneficios de CD Campo en WhatsApp"
+          >
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            Evaluar beneficios en WhatsApp
+          </a>
+
+          <p class="harvest-benefits__hint mb-0">Te respondemos rápido en horario laboral · Sin compromiso</p>
+        </div>
+      </div>
+
+      <!-- Right: benefit grid -->
+      <div class="harvest-benefits__grid" role="list" aria-label="Beneficios de CD Campo">
+        <!-- Benefit 1 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-clipboard-check"></i></span>
+            <h3 class="benefit-card__title">Cierre diario sin planillas</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Consolidas avances, pendientes y evidencias al final del día sin transcribir papel ni depender de múltiples archivos.
+          </p>
+        </article>
+
+        <!-- Benefit 2 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-people"></i></span>
+            <h3 class="benefit-card__title">Mejor coordinación de equipos</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Asignas labores por cuadrilla o responsable y monitoreas el avance real para evitar duplicidades y omisiones.
+          </p>
+        </article>
+
+        <!-- Benefit 3 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-signpost-split"></i></span>
+            <h3 class="benefit-card__title">Trazabilidad por cuartel y sector</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Ordenas lo ejecutado por sector, labor y responsable, reduciendo confusiones y “versiones distintas” del mismo día.
+          </p>
+        </article>
+
+        <!-- Benefit 4 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-exclamation-triangle"></i></span>
+            <h3 class="benefit-card__title">Anomalías con evidencia y seguimiento</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Registra hallazgos con foto/nota y gestiona alertas para actuar a tiempo y no perder información clave.
+          </p>
+        </article>
+
+        <!-- Benefit 5 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-diagram-3"></i></span>
+            <h3 class="benefit-card__title">Seguimiento fenológico más consistente</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Registra estados por cuartel y mejora la planificación técnica, evitando decisiones tardías o basadas en suposiciones.
+          </p>
+        </article>
+
+        <!-- Benefit 6 -->
+        <article class="benefit-card" role="listitem">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon" aria-hidden="true"><i class="bi bi-shield-check"></i></span>
+            <h3 class="benefit-card__title">Control con datos confiables</h3>
+          </div>
+          <p class="benefit-card__text mb-0">
+            Menos intuición y más evidencia para supervisar, corregir desvíos y sostener una operación ordenada.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- =========================
+     USO REAL EN TERRENO (Videos clientes)
+     ========================= -->
+<section id="uso-real" class="real-use section" aria-label="Uso real en terreno">
+  <div id= "testimonials" class="container">
+
+    <header class="section-header text-center" data-aos="fade-up">
+      <span class="section-kicker">Uso real en terreno</span>
+      <h2>Productores que ya trabajan con Cosechando <span style="color: #8CC63F;">Datos</span></h2>
+      <p class="section-lead">
+        No son demos ni simulaciones. Son operaciones agrícolas reales usando el sistema día a día.
+      </p>
+    </header>
+
+    <div class="real-use-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Video 1 -->
+      <article class="real-use-card">
+        <a
+          href="https://youtu.be/czIPrYXvrRQ"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: control de cosecha en operación real"
+          title="Ver video de cliente: control de cosecha"
+          data-gallery="realuse"
+        >
+          <!-- Opción A: miniatura desde YouTube (no necesitas archivo local) -->
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-2.webp"
+            alt="Video de cliente usando Cosechando Datos para control de cosecha"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Productores usando el sistema día a día</h3>
+          <p>Registro y supervisión diaria con productividad por cuadrilla y cuartel.</p>
+        </div>
+      </article>
+
+      <!-- Video 2 -->
+      <article class="real-use-card">
+        <a
+          href="https://www.youtube.com/watch?v=tl9tKoB2B5Y"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: registro desde celular en terreno"
+          title="Ver video de cliente: registro en terreno"
+          data-gallery="realuse"
+        >
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-1.webp"
+            alt="Video de cliente registrando labores y evidencias desde el celular"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Registro directo en terreno</h3>
+          <p>Labores, cosecha y evidencias desde web o celular, sin doble digitación.</p>
+        </div>
+      </article>
+
+      <!-- Video 3 -->
+      <article class="real-use-card">
+        <a
+          href="https://www.youtube.com/watch?v=vkn7ZJQQZ7k"
+          class="glightbox real-use-video"
+          aria-label="Ver video de cliente: costos y decisiones con datos"
+          title="Ver video de cliente: costos y decisiones"
+          data-gallery="realuse"
+        >
+          <img
+            src="./assets/img/opiniones-de-empresa-cosechando-datos-3.webp"
+            alt="Video de cliente visualizando costos agrícolas y reportes en Cosechando Datos"
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="360"
+          >
+          <span class="play-button" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+        </a>
+
+        <div class="real-use-info">
+          <h3>Decisiones con datos reales</h3>
+          <p>Costos por centro de costo y reportes por temporada para mejorar rentabilidad.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="real-use-cta" data-aos="fade-up" data-aos-delay="150">
+      <div class="real-use-cta__text">
+        <h3>¿Quieres ver cómo se aplicaría en tu campo?</h3>
+        <p>Te mostramos el flujo completo con ejemplos reales según tu operación.</p>
+        <small>Respuesta rápida en horario laboral · Demo sin compromiso</small>
+      </div>
+
+      <div class="real-use-cta__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20ver%20cómo%20se%20usa%20Cosechando%20Datos%20en%20mi%20campo"
+          class="btn-cta-primary"
+          target="_blank"
+          rel="noopener"
+          aria-label="Agendar demo por WhatsApp"
+          title="Agendar demo por WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Agendar demo por WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Faq Section | CD Campo -->
+<section id="faq" class="faq section light-background">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Intro -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="content px-xl-5">
+          <h3><span>Preguntas </span><strong>Frecuentes</strong></h3>
+          <p>
+            Respondemos las dudas más comunes antes de comenzar.
+            Si tu pregunta no está aquí, la resolvemos contigo en una demo.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ items -->
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-container">
+
+          <!-- 1 -->
+          <div class="faq-item faq-active">
+            <h3>
+              <span class="num">1.</span>
+              <span>¿Puedo registrar labores del huerto en terreno desde el celular?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. Puedes registrar labores directamente desde celular o web, sin planillas ni papel.
+                La idea es que la información nazca en terreno y quede disponible para supervisión inmediata.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 2 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">2.</span>
+              <span>¿Funciona si no tengo señal o internet en el campo?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. CD Campo puede operar con o sin señal. Cuando no hay conexión, los registros quedan guardados
+                y se sincronizan cuando vuelve internet, manteniendo la continuidad del control.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 3 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">3.</span>
+              <span>¿Se puede gestionar por cuartel/sector y por cuadrilla o responsable?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. CD Campo se configura según la realidad de tu huerto para registrar y reportar
+                por cuartel/sector y también por cuadrilla o responsable, según cómo trabajen en terreno.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 4 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">4.</span>
+              <span>¿Qué evita la “doble digitación” y los registros que se pierden?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                El registro se hace una sola vez en terreno y queda centralizado.
+                Así reduces el papel, las planillas paralelas y la pérdida de información típica de los procesos manuales.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 5 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">5.</span>
+              <span>¿Qué labores puedo gestionar con CD Campo?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Puedes gestionar labores como tratos, raleo, poda e inspecciones, además de registrar evidencias de anomalías
+                y llevar seguimiento fenológico. En la demo lo aterrizamos a tu operación y calendario de trabajo.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 6 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">6.</span>
+              <span>¿Puedo registrar anomalías y evidencias (fotos/notas) en terreno?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. El sistema permite registrar anomalías con evidencia (foto/nota) asociada al sector o labor,
+                para que el hallazgo no quede “en un chat” y se pueda hacer seguimiento.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 7 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">7.</span>
+              <span>¿Incluye alertas personalizadas para actuar a tiempo?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. Puedes recibir alertas personalizadas según tu operación (por ejemplo, anomalías reportadas,
+                desvíos de avance o registros críticos), para corregir durante la jornada y no cuando ya es tarde.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+          <!-- 8 -->
+          <div class="faq-item">
+            <h3>
+              <span class="num">8.</span>
+              <span>¿Entregan soporte y acompañamiento para que el equipo lo use bien?</span>
+            </h3>
+            <div class="faq-content">
+              <p>
+                Sí. Acompañamos la implementación y damos soporte para que tu equipo adopte el sistema sin complicaciones.
+                La meta es que el registro sea consistente en terreno y útil para tomar decisiones reales.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- /Faq Section -->
+
+
+<!-- =========================
+     CTA FINAL – CD CAMPO
+     ========================= -->
+<section id="cta-final" class="cta-final section light-background">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="cta-final__box">
+
+      <div class="cta-final__content">
+        <h2>¿Quieres ver CD Campo aplicado a tu huerto?</h2>
+        <p>
+          Agenda una demo y revisamos cómo asignar, registrar y supervisar labores del huerto,
+          con seguimiento por cuartel, evidencias en terreno y alertas para decidir a tiempo.
+        </p>
+        <small>
+          Respuesta rápida en horario laboral · Demo sin compromiso
+        </small>
+      </div>
+
+      <div class="cta-final__actions">
+        <a
+          href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20CD%20Campo%20para%20gesti%C3%B3n%20de%20labores%20de%20huerto."
+          class="btn-cta-primary"
+          target="_blank"
+          rel="noopener"
+          aria-label="Agendar demo de CD Campo por WhatsApp"
+          title="Agendar demo de CD Campo"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Ver CD Campo en mi huerto
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /CTA FINAL – CD CAMPO -->
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <div>
+      <span>¿Tienes dudas?</span>
+      <span class="description-title">Hablemos de tu operación agrícola</span>
+    </div>
+    <p class="section-subtitle">
+      Nuestro equipo te orienta según tu campo, temporada y objetivos productivos.
+    </p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <!-- Info Column -->
+      <div class="col-lg-4">
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Ubicación</h3>
+            <p>Los Niches, Curicó, Chile</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Teléfono</h3>
+            <p>
+              +56956686855
+            </p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email</h3>
+            <p>
+              contacto@cosechandodatos.cl   
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Info Column -->
+
+      <!-- Form Column -->
+      <div class="col-lg-8">
+
+        <form
+          action="forms/contact.php"
+          method="post"
+          class="php-email-form"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Nombre y apellido"
+                required
+              >
+            </div>
+
+            <div class="col-md-6">
+              <input
+                type="tel"
+                name="phone"
+                class="form-control"
+                placeholder="Teléfono de contacto"
+                required
+              >
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              >
+            </div>
+
+            <div class="col-md-12">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="6"
+                placeholder="Cuéntanos brevemente sobre tu campo, cultivo o necesidad"
+                required
+              ></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+
+              <div class="loading">Enviando mensaje…</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                ¡Mensaje enviado! Nuestro equipo se pondrá en contacto contigo.
+              </div>
+
+              <button type="submit">
+                Enviar consulta
+              </button>
+
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+      <!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /Contact Section -->
+
+
+  </main>
+
+<footer id="footer" class="footer light-background">
+  <div class="container">
+
+    <!-- Top: Marca (izq) + Certificaciones (der) -->
+    <div class="footer-top">
+
+      <!-- Col 1: Marca -->
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo" aria-label="Cosechando Datos - Inicio">
+          <img
+            src="assets/img/logotipo-cosechando-datos.webp"
+            alt="Cosechando Datos - Software agrícola"
+            title="Cosechando Datos - Software agrícola"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
+
+        <p class="footer-tagline">
+          Software agrícola para gestionar costos, labores, cosecha y alertas en un solo lugar.
+        </p>
+      </div>
+
+      <!-- Col 2: Certificaciones -->
+      <div class="footer-certbox" aria-label="Certificaciones">
+        <p class="footer-certbox__text">
+          Certificados para operar con estándares exigentes en el rubro agrícola.
+        </p>
+
+        <div class="footer-certs">
+          <img
+            class="footer-certs__logo"
+            src="assets/img/sag-logotipo-cosechando-datos.webp"
+            alt="Certificación SAG"
+            title="Certificación SAG"
+            loading="lazy"
+            decoding="async"
+            width="140"
+            height="40"
+            onerror="this.style.display='none';"
+          >
+
+          <img
+            class="footer-certs__logo"
+            src="assets/img/globalg.a.p logotipo-cosechando-datos.webp"
+            alt="Certificación Global G.A.P."
+            title="Certificación Global G.A.P."
+            loading="lazy"
+            decoding="async"
+            width="200"
+            height="40"
+            onerror="this.style.display='none';"
+          >
+          
+        </div>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <hr class="footer-divider">
+
+    <!-- Bottom: copyright + redes + créditos (SIN CAMBIOS) -->
+    <div class="footer-bottom">
+
+      <div class="copyright">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Cosechando Datos</strong>
+          <span>Todos los derechos reservados</span>
+        </p>
+      </div>
+
+      <div class="social-links" aria-label="Redes sociales de Cosechando Datos">
+        <a
+          href="https://www.facebook.com/profile.php?id=100087613870488&locale=es_LA"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook de Cosechando Datos"
+          title="Facebook"
+        >
+          <i class="bi bi-facebook" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/cosechandodatos.cl/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram de Cosechando Datos"
+          title="Instagram"
+        >
+          <i class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/cosechando-datos-spa-066a64213/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn de Cosechando Datos"
+          title="LinkedIn"
+        >
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="credits">
+        Diseñado por
+        <a
+          href="https://accinnovations.cl/"
+          target="_blank"
+          rel="noopener"
+          title="Acc Innovations"
+        >
+          Acc Innovations
+        </a>
+      </div>
+
+    </div><!-- /footer-bottom -->
+
+  </div>
+</footer>
+
+
+
+
+
+  <!-- WhatsApp Button -->
+<a 
+  href="https://wa.me/56956686855?text=Hola%2C%20tengo%20inter%C3%A9s%20en%20contratar%20el%20software"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+>
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+    alt="WhatsApp"
+  >
+</a>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

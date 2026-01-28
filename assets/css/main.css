@@ -916,6 +916,21 @@ h1 {
   background-image: url("../img/control-de-cosecha.jpg");
 }
 
+/* Módulo CD Campo */
+.hero.hero-cd-campo{
+  background-image: url("../img/cd-campo.jpg");
+}
+
+/* Módulo CD Campo */
+.hero.hero-erp-agricola{
+  background-image: url("../img/campo-frutal-cosechando-datos-3.jpg");
+}
+
+/* Módulo CD Campo */
+.hero.hero-alerta-heladas{
+  background-image: url("../img/alerta-heladas.jpg");
+}
+
 
 .hero .container {
   position: relative;
@@ -1894,6 +1909,94 @@ h1 {
   }
 }
 
+/* =========================
+   CD CAMPO: CAPTURAS (VISTA MÓVIL)
+   ========================= */
+
+.cd-screens{
+  position: relative;
+}
+
+.cd-screens .section-kicker{
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+  opacity: .85;
+}
+
+/* Bullets */
+.cd-screens__bullets i{
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin-top: .15rem;
+}
+
+/* Figure / mockup container */
+.cd-screens__figure{
+  width: 100%;
+}
+
+.cd-screens__mockup{
+  position: relative;
+  width: min(420px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 26px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(0,0,0,.14);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+/* Simula borde de teléfono (sutil, sin imagen extra) */
+.cd-screens__mockup::before{
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,.08);
+  pointer-events: none;
+}
+
+/* Imagen */
+.cd-screens__img{
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateZ(0); /* mejora nitidez en algunos navegadores */
+}
+
+/* Caption */
+.cd-screens__caption{
+  opacity: .8;
+}
+
+/* Micro CTA */
+.cd-screens__cta{
+  border-top: 1px dashed rgba(0,0,0,.15);
+  padding-top: 1rem;
+}
+
+/* Ajustes responsive */
+@media (max-width: 991.98px){
+  .cd-screens__mockup{
+    width: min(380px, 100%);
+  }
+}
+
+@media (max-width: 575.98px){
+  .cd-screens__mockup{
+    border-radius: 22px;
+  }
+  .cd-screens__mockup::before{
+    inset: 8px;
+    border-radius: 18px;
+  }
+}
+
+
 
 /* =========================
    CONTROL DE COSECHA: BENEFICIOS (look distinto)
@@ -2080,6 +2183,154 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   ERP MODULES (10 módulos + GlobalG.A.P)
+   ========================= */
+
+.erp-modules {
+  position: relative;
+}
+
+.erp-modules .section-header {
+  margin-bottom: 1.25rem;
+}
+
+/* Grid cards */
+.module-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.10);
+  border-color: rgba(140, 198, 63, 0.35);
+}
+
+/* Icon */
+.module-card i {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(140, 198, 63, 0.12);
+  color: #8CC63F;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.module-card h3 {
+  font-size: 1.02rem;
+  line-height: 1.2;
+  margin: 0 0 6px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Text */
+.module-card p {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.74);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* Certification block */
+.erp-certification {
+  margin-top: 2.25rem;
+}
+
+.erp-certification__box {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: linear-gradient(180deg, rgba(140, 198, 63, 0.10), rgba(140, 198, 63, 0.04));
+  border: 1px solid rgba(140, 198, 63, 0.25);
+  border-radius: 18px;
+  padding: 18px 18px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.erp-certification__box > i {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(140, 198, 63, 0.16);
+  color: #8CC63F;
+  font-size: 22px;
+  margin-top: 2px;
+}
+
+.erp-certification__box h3 {
+  margin: 0 0 4px;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.erp-certification__box p {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.78);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.erp-certification__box strong {
+  color: #0f172a;
+  font-weight: 800;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+  .module-card {
+    padding: 16px 16px 14px;
+    border-radius: 14px;
+  }
+
+  .erp-certification__box {
+    border-radius: 16px;
+    padding: 16px 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .module-card i,
+  .erp-certification__box > i {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+    font-size: 20px;
+    border-radius: 12px;
+  }
+
+  .module-card h3 {
+    font-size: 1rem;
+  }
+
+  .module-card p {
+    font-size: 0.93rem;
+  }
+
+  .erp-certification__box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 
 
 /* =========================
