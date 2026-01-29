@@ -170,6 +170,19 @@ section h2,
   }
 }
 
+.visually-hidden{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  padding:0!important;
+  margin:-1px!important;
+  overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;
+  white-space:nowrap!important;
+  border:0!important;
+}
+
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -902,7 +915,7 @@ h1 {
 .hero {
   position: relative;
   padding: 120px 0 90px; /* más espacio abajo para que no choque con las cards */
-  background-image: url("../img/sofrware-agricola-para-controlar-el-campo.webp");
+  background-image: url("../img/campo-agricola-huerto-software-agricola.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -913,22 +926,22 @@ h1 {
 
 /* Módulo Control de Cosecha */
 .hero.hero-cosecha{
-  background-image: url("../img/control-de-cosecha.jpg");
+  background-image: url("../img/cosecha-agricola-control-productividad-fruta.webp");
 }
 
 /* Módulo CD Campo */
 .hero.hero-cd-campo{
-  background-image: url("../img/cd-campo.jpg");
+  background-image: url("../img/huerto-agricola-gestion-labores-cd-campo.webp");
 }
 
 /* Módulo CD Campo */
 .hero.hero-erp-agricola{
-  background-image: url("../img/campo-frutal-cosechando-datos-3.jpg");
+  background-image: url("../img/huerto-agricola-gestion-erp-agricola.webp");
 }
 
 /* Módulo CD Campo */
 .hero.hero-alerta-heladas{
-  background-image: url("../img/alerta-heladas.jpg");
+  background-image: url("../img/heladas-agricolas-proteccion-huerto.webp");
 }
 
 
@@ -955,6 +968,67 @@ h1 {
 .hero-visual {
   filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.12));
 }
+
+.hero-visual-heladas {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 375px) {
+  .hero-visual-heladas {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 540px) {
+  .hero-visual-heladas {
+    max-width: 330px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-visual-heladas {
+    max-width: 454px;
+  }
+}
+
+@media (min-width: 820px) {
+  .hero-visual-heladas {
+    max-width: 630px;
+  }
+}
+
+@media (min-width: 912px) {
+  .hero-visual-heladas {
+    max-width: 555px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-visual-heladas {
+    max-width: 380px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-visual-heladas {
+    max-width: 454px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-visual-heladas {
+    max-width: 420px;
+  }
+}
+
+
 
 /* =========================
    CTA PRINCIPAL (Global)
@@ -2196,8 +2270,8 @@ h1 {
   margin-bottom: 1.25rem;
 }
 
-/* Grid cards */
-.module-card {
+/* Grid cards (solo dentro de ERP) */
+.erp-modules .module-card {
   height: 100%;
   background: #ffffff;
   border: 1px solid rgba(15, 23, 42, 0.08);
@@ -2207,14 +2281,14 @@ h1 {
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 
-.module-card:hover {
+.erp-modules .module-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 34px rgba(15, 23, 42, 0.10);
   border-color: rgba(140, 198, 63, 0.35);
 }
 
-/* Icon */
-.module-card i {
+/* Icon (IMPORTANTE: SOLO el ícono principal del card) */
+.erp-modules .module-card > i {
   display: inline-flex;
   width: 46px;
   height: 46px;
@@ -2228,7 +2302,7 @@ h1 {
 }
 
 /* Title */
-.module-card h3 {
+.erp-modules .module-card h3 {
   font-size: 1.02rem;
   line-height: 1.2;
   margin: 0 0 6px;
@@ -2237,7 +2311,7 @@ h1 {
 }
 
 /* Text */
-.module-card p {
+.erp-modules .module-card p {
   margin: 0;
   color: rgba(15, 23, 42, 0.74);
   font-size: 0.95rem;
@@ -2245,11 +2319,11 @@ h1 {
 }
 
 /* Certification block */
-.erp-certification {
+.erp-modules .erp-certification {
   margin-top: 2.25rem;
 }
 
-.erp-certification__box {
+.erp-modules .erp-certification__box {
   display: flex;
   gap: 14px;
   align-items: flex-start;
@@ -2260,7 +2334,7 @@ h1 {
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
 }
 
-.erp-certification__box > i {
+.erp-modules .erp-certification__box > i {
   width: 46px;
   height: 46px;
   flex: 0 0 46px;
@@ -2274,7 +2348,7 @@ h1 {
   margin-top: 2px;
 }
 
-.erp-certification__box h3 {
+.erp-modules .erp-certification__box h3 {
   margin: 0 0 4px;
   font-size: 1.12rem;
   line-height: 1.25;
@@ -2282,34 +2356,34 @@ h1 {
   font-weight: 800;
 }
 
-.erp-certification__box p {
+.erp-modules .erp-certification__box p {
   margin: 0;
   color: rgba(15, 23, 42, 0.78);
   font-size: 0.98rem;
   line-height: 1.5;
 }
 
-.erp-certification__box strong {
+.erp-modules .erp-certification__box strong {
   color: #0f172a;
   font-weight: 800;
 }
 
 /* Responsive tweaks */
 @media (max-width: 991.98px) {
-  .module-card {
+  .erp-modules .module-card {
     padding: 16px 16px 14px;
     border-radius: 14px;
   }
 
-  .erp-certification__box {
+  .erp-modules .erp-certification__box {
     border-radius: 16px;
     padding: 16px 16px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .module-card i,
-  .erp-certification__box > i {
+  .erp-modules .module-card > i,
+  .erp-modules .erp-certification__box > i {
     width: 42px;
     height: 42px;
     flex-basis: 42px;
@@ -2317,40 +2391,37 @@ h1 {
     border-radius: 12px;
   }
 
-  .module-card h3 {
+  .erp-modules .module-card h3 {
     font-size: 1rem;
   }
 
-  .module-card p {
+  .erp-modules .module-card p {
     font-size: 0.93rem;
   }
 
-  .erp-certification__box {
+  .erp-modules .erp-certification__box {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
 
-
 /* =========================
    MODULOS / SOFTWARES (4)
-   Sección: #modulos
    ========================= */
 
-.modules {
+.modules{
   padding: 80px 0;
   background: #ffffff;
 }
 
-/* Reusa tu header global si ya existe.
-   Si no, esto ayuda a que se vea igual que las otras secciones */
-.modules .section-header {
+/* Header */
+.modules .section-header{
   max-width: 920px;
   margin: 0 auto 38px auto;
 }
 
-.modules .section-kicker {
+.modules .section-kicker{
   display: inline-block;
   font-size: 12px;
   letter-spacing: 0.12em;
@@ -2359,12 +2430,11 @@ h1 {
   border-radius: 999px;
   background: rgba(140, 198, 63, 0.14);
   color: #4c940c;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 14px;
 }
 
-
-.modules .section-lead {
+.modules .section-lead{
   margin: 0 auto;
   color: rgba(43, 43, 43, 0.72);
   font-size: 16px;
@@ -2372,15 +2442,16 @@ h1 {
 }
 
 /* Grid */
-.modules-grid {
+.modules .modules-grid{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 18px;
   margin-top: 26px;
+  align-items: stretch;
 }
 
 /* Card base */
-.module-card {
+.modules .module-card{
   grid-column: span 6;
   background: #ffffff;
   border: 1px solid rgba(0,0,0,0.06);
@@ -2389,36 +2460,38 @@ h1 {
   box-shadow: 0 10px 26px rgba(0,0,0,0.06);
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
-.module-card:hover {
+.modules .module-card:hover{
   transform: translateY(-3px);
   box-shadow: 0 16px 34px rgba(0,0,0,0.09);
   border-color: rgba(140, 198, 63, 0.25);
 }
 
-/* Variante destacada (primer módulo) */
-.module-card--primary {
+/* Variante destacada */
+.modules .module-card--primary{
   border-color: rgba(140, 198, 63, 0.25);
   box-shadow: 0 14px 34px rgba(0,0,0,0.08);
-  position: relative;
 }
 
-.module-card--primary::before {
+.modules .module-card--primary::before{
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 16px;
   pointer-events: none;
   background: linear-gradient(
     135deg,
-    rgba(140, 198, 63, 0.10),
+    rgba(140, 198, 63, 0.12),
     rgba(140, 198, 63, 0.00) 55%
   );
 }
 
-/* Top: icono + título */
-.module-top {
+/* Top */
+.modules .module-top{
   display: flex;
   gap: 14px;
   align-items: flex-start;
@@ -2427,34 +2500,32 @@ h1 {
   z-index: 1;
 }
 
-.module-icon {
-  width: 55px;
-  height: 55px;
+.modules .module-icon{
+  width: 52px;
+  height: 52px;
   border-radius: 14px;
   display: grid;
   place-items: center;
   background: rgba(140, 198, 63, 0.14);
   color: #4c940c;
-  flex: 0 0 auto;
+  flex: 0 0 52px;
 }
 
-.module-icon i {
-  font-size: 40px;
+.modules .module-icon i{
+  font-size: 30px;
   line-height: 1;
 }
 
-.module-meta {
-  min-width: 0;
-}
+.modules .module-meta{ min-width: 0; }
 
-.module-title {
+.modules .module-title{
   font-size: 18px;
   font-weight: 900;
   margin: 0 0 4px 0;
   color: #2b2b2b;
 }
 
-.module-subtitle {
+.modules .module-subtitle{
   margin: 0;
   color: rgba(43, 43, 43, 0.74);
   font-size: 14.5px;
@@ -2462,85 +2533,121 @@ h1 {
 }
 
 /* Bullets */
-.module-bullets {
+.modules .module-bullets{
   list-style: none;
   padding: 0;
-  margin: 14px 0 0 0;
+  margin: 16px 0 0 0;
   display: grid;
-  gap: 10px;
+  gap: 12px;
   position: relative;
   z-index: 1;
 }
 
-.module-bullets li {
-  display: flex;
+.modules .module-bullets li{
+  display: grid;
+  grid-template-columns: 30px 1fr;
   gap: 10px;
-  align-items: flex-start;
-  color: rgba(43, 43, 43, 0.78);
+  align-items: start;
+  color: rgba(43, 43, 43, 0.80);
   font-size: 13.5px;
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
-.module-bullets i {
-  color: #4c940c;
-  font-size: 16px;
-  line-height: 1.2;
-  margin-top: 2px;
-}
-
-/* Acciones */
-.module-actions {
-  margin-top: 16px;
+.modules .module-bullets i{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: rgba(140, 198, 63, 0.14);
   display: flex;
   align-items: center;
-  gap: 14px;
+  justify-content: center;
+  color: #4c940c;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Acciones (layout fijo y consistente) */
+.modules .module-actions{
+  margin-top: auto;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 14px;
+  flex-wrap: nowrap;
   position: relative;
   z-index: 1;
 }
 
-/* Botón principal: usa el estilo que ya definieron (clase global) */
-.module-btn.btn-cta-primary {
+/* ======================================================
+   BOTÓN PRIMARIO (AISLADO) - con reset anti CSS global
+   ====================================================== */
+.modules a.modules-btn-primary{
+  /* Reset típico de conflictos */
+  all: unset;
+  box-sizing: border-box;
+
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  text-decoration: none;
+
+  padding: 12px 26px;
+  border-radius: 999px;
+
+  font-weight: 800;
+  font-size: 14.5px;
+  line-height: 1;
   white-space: nowrap;
+  cursor: pointer;
+
+  background: #8CC63F;
+  color: #ffffff;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
 }
 
-.module-btn i {
+.modules a.modules-btn-primary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+  background-color: #4C940C;
+  color: #ffffff;
+}
+
+.modules a.modules-btn-primary i{
   font-size: 16px;
   line-height: 1;
 }
 
-/* Link secundario (WhatsApp pequeño) */
-.module-link {
+/* Link secundario (Pedir demo) */
+.modules .module-link{
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-weight: 800;
-  font-size: 13px;
+  font-size: 12.5px;
   color: #4c940c;
   text-decoration: none;
   padding: 8px 10px;
   border-radius: 999px;
-  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+  transition: background-color .2s ease, transform .2s ease;
+  white-space: nowrap;
 }
 
-.module-link:hover {
+.modules .module-link:hover{
   background: rgba(140, 198, 63, 0.14);
-  color: #4c940c;
   transform: translateY(-1px);
 }
 
-.module-link i {
+.modules .module-link i{
   font-size: 14px;
   line-height: 1;
 }
 
 /* CTA inferior */
-.modules-cta {
+.modules .modules-cta{
   margin-top: 22px;
   border-radius: 16px;
   border: 1px solid rgba(140, 198, 63, 0.22);
@@ -2552,52 +2659,62 @@ h1 {
   align-items: center;
 }
 
-.modules-cta__content h3 {
+.modules .modules-cta__content h3{
   margin: 0 0 6px 0;
   font-weight: 900;
   font-size: 20px;
   color: #2b2b2b;
 }
 
-.modules-cta__content p {
+.modules .modules-cta__content p{
   margin: 0 0 8px 0;
   color: rgba(43, 43, 43, 0.74);
   line-height: 1.6;
 }
 
-.modules-cta__content small {
+.modules .modules-cta__content small{
   color: rgba(43, 43, 43, 0.62);
 }
 
-.modules-cta__actions {
+.modules .modules-cta__actions{
   display: grid;
   justify-items: end;
-  gap: 10px;
-}
-
-/* Asegura que el botón del CTA inferior use el mismo look */
-.modules-cta__actions .btn-cta-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  white-space: nowrap;
 }
 
 /* Responsive */
-@media (max-width: 991px) {
-  .module-card { grid-column: span 12; }
-  .modules-cta { grid-template-columns: 1fr; }
-  .modules-cta__actions { justify-items: start; }
+@media (max-width: 991px){
+  .modules .module-card{ grid-column: span 12; }
+  .modules .modules-cta{ grid-template-columns: 1fr; }
+  .modules .modules-cta__actions{ justify-items: start; }
 }
 
-@media (max-width: 575px) {
-  .modules { padding: 60px 0; }
-  .module-card { padding: 20px; }
-  .modules-cta { padding: 18px; }
-  .modules-cta__actions .btn-cta-primary { width: 100%; justify-content: center; }
-  .module-actions { gap: 10px; }
-  .module-btn.btn-cta-primary { width: 100%; justify-content: center; }
+@media (max-width: 575px){
+  .modules{ padding: 60px 0; }
+
+  .modules .module-card{ padding: 20px; }
+
+  .modules .module-actions{
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .modules a.modules-btn-primary{
+    width: 100%;
+  }
+
+  .modules .module-link{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modules .modules-cta{ padding: 18px; }
+
+  .modules .modules-cta__actions a.modules-btn-primary{
+    width: 100%;
+    justify-content: center;
+  }
 }
+
 
 
 
@@ -3475,3 +3592,186 @@ h1 {
 /*--------------------------------------------------------------
 # End Whatsapp Butoon
 --------------------------------------------------------------*/
+
+
+/* =========================
+   ABOUT – COSECHANDO DATOS
+   ========================= */
+
+   
+
+.about-cd .section-header .kicker{
+  display:inline-block;
+  padding:.35rem .75rem;
+  border-radius:999px;
+  border:1px solid rgba(15,23,42,.10);
+  background: rgba(255,255,255,.75);
+  font-weight:600;
+  margin-bottom:.65rem;
+}
+
+.about-cd .section-header .lead{
+  max-width: 820px;
+  margin: 0.75rem auto 0;
+  color: rgba(15,23,42,.78);
+}
+
+.about-cd__panel{
+  background:#fff;
+  border:1px solid rgba(15,23,42,.08);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 12px 28px rgba(15,23,42,.06);
+}
+
+.about-cd__badge{
+  margin-bottom: 12px;
+}
+
+.about-cd__title{
+  font-size: 1.35rem;
+  margin: 0 0 .65rem;
+  letter-spacing: -0.2px;
+}
+
+.about-cd__text{
+  color: rgba(15,23,42,.80);
+  line-height: 1.65;
+  margin-bottom: .75rem;
+}
+
+/* Trust line */
+.about-cd__trust{
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(15,23,42,.08);
+  display: grid;
+  gap: 12px;
+}
+
+.trust-item{
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.trust-item i{
+  font-size: 1.1rem;
+  line-height: 1;
+  transform: translateY(2px);
+  color: rgba(15,23,42,.85);
+}
+
+.trust-item strong{
+  display:block;
+  font-weight: 700;
+  color: rgba(15,23,42,.95);
+  margin-bottom: 2px;
+}
+
+.trust-item span{
+  display:block;
+  color: rgba(15,23,42,.72);
+  font-size: .95rem;
+}
+
+/* Cards derecha */
+.about-cd__cards{
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.about-cd__card{
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 12px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: rgba(255,255,255,.9);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.about-cd__card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(15,23,42,.08);
+  border-color: rgba(140,198,63,.35);
+}
+
+.about-cd__card .icn{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(15,23,42,.10);
+  background: rgba(140,198,63,.10);
+}
+
+.about-cd__card .icn i{
+  font-size: 1.25rem;
+  color: rgba(15,23,42,.90);
+}
+
+.about-cd__card h4{
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+  letter-spacing: -.15px;
+}
+
+.about-cd__card p{
+  margin: 0;
+  color: rgba(15,23,42,.75);
+  line-height: 1.55;
+}
+
+/* Impact box */
+.about-cd__impact{
+  margin-top: 14px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: linear-gradient(180deg, rgba(140,198,63,.12), rgba(255,255,255,.85));
+}
+
+.about-cd__impact h4{
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.about-cd__impact p{
+  color: rgba(15,23,42,.78);
+  line-height: 1.6;
+}
+
+/* FAQ wrapper */
+.about-cd__faq{
+  background:#fff;
+  border:1px solid rgba(15,23,42,.08);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 12px 28px rgba(15,23,42,.06);
+}
+
+.about-cd__faqnote small{
+  display:block;
+  margin-top: 14px;
+  color: rgba(15,23,42,.70);
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px){
+  .about-cd__panel{ padding: 18px; }
+  .about-cd__faq{ padding: 18px; }
+}
+
+.accordion-button:not(.collapsed){
+  color: #2b2b2b;
+  background-color: rgba(140,198,63,.10);
+}
+
+/* =========================
+   END ABOUT – COSECHANDO DATOS
+   ========================= */

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gestión de campo agrícola | Control de labores y costos | Cosechando Datos</title>
+  <meta name="description" content="Software de gestión de campo agrícola para registrar labores, controlar costos, supervisar cuadrillas y tomar decisiones con datos reales desde terreno.">
+  <meta name="keywords" content="gestión de campo agrícola, software agrícola de gestión, control de labores agrícolas, control de costos agrícolas, supervisión de cuadrillas agrícolas, registro de labores en terreno, gestión operativa agrícola">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img 
+        src="assets/img/logotipo-cosechando-datos.webp" 
+        alt="Logotipo Cosechando Datos - Software agrícola"
+        title="Cosechando Datos - Software agrícola de gestión"
+        loading="eager"
+      >
+    </a>
+
+    <!-- NAV -->
+    <div class="d-flex align-items-center gap-3">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./about.html">Nosotros</a></li>
+
+          <li class="dropdown">
+            <a href="#modules">
+              <span>Módulos</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="./control-cosecha.html">Control Cosecha</a></li>
+              <li><a href="./cd-campo.html">CD Campo</a></li>
+              <li><a href="./erp-agricola.html">ERP Agrícola</a></li>
+              <li><a href="./alerta-heladas.html">Alerta Heladas</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+
+          
+
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- CTA HEADER -->
+      <a
+      href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20Cosechando%20Datos"
+      class="btn-cta-primary btn-header-cta d-none d-xl-inline-flex"
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar demo del software agrícola por WhatsApp"
+      title="Agendar demo del software agrícola"
+    >
+      Agendar prueba
+    </a>
+    </div>
+  </div>
+</header>
+
+
+  <main class="main">
+
+<!-- =========================
+     HERO | NOSOTROS
+     ========================= -->
+<section id="hero-nosotros" class="hero hero-nosotros section" role="banner" aria-label="Quiénes somos en Cosechando Datos">
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="container hero-inner position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-5 align-items-center">
+
+      <!-- COPY -->
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+
+        <div class="hero-badge mb-3">
+          <span class="badge rounded-pill text-bg-light border" title="Plataforma validada por productores en terreno">
+            Nosotros
+          </span>
+        </div>
+
+        <h1>Del campo a la tecnología, con soluciones que sí funcionan</h1>
+
+        <p class="hero-lead">
+          En Cosechando Datos combinamos experiencia agrícola e informática para crear herramientas prácticas,
+          centralizadas y validadas por productores. No somos solo software: somos un aliado estratégico que
+          acompaña tu gestión diaria y transforma necesidades reales en soluciones robustas, innovadoras y con valor justo.
+        </p>
+
+        <div class="hero-ctas d-flex flex-wrap gap-3 align-items-center">
+          <a
+            href="https://wa.me/56956686855?text=Hola%2C%20quiero%20agendar%20una%20demo%20de%20Cosechando%20Datos%20para%20mi%20operaci%C3%B3n%20agr%C3%ADcola"
+            class="btn-cta-primary btn-get-started"
+            aria-label="Solicitar una demo de Cosechando Datos"
+            title="Solicitar demo Cosechando Datos"
+          >
+            Solicitar demo
+          </a>
+
+          <a
+            href="./index.html#modules"
+            class="btn-watch-video d-flex align-items-center"
+            aria-label="Ver módulos de la plataforma Cosechando Datos"
+            title="Ver módulos de Cosechando Datos"
+          >
+            <i class="bi bi-grid-1x2"></i><span>Ver módulos</span>
+          </a>
+        </div>
+
+        <!-- Trust line -->
+        <ul class="hero-trust list-inline small mt-4 mb-0" aria-label="Beneficios clave de Cosechando Datos">
+          <li class="list-inline-item"><i class="bi bi-grid-1x2 me-1" aria-hidden="true"></i>Plataforma centralizada 360°</li>
+          <li class="list-inline-item"><i class="bi bi-person-check me-1" aria-hidden="true"></i>Acompañamiento en implementación</li>
+          <li class="list-inline-item"><i class="bi bi-shield-check me-1" aria-hidden="true"></i>Confidencialidad por contrato</li>
+          <li class="list-inline-item"><i class="bi bi-hdd-network me-1" aria-hidden="true"></i>Datos encriptados + respaldos</li>
+        </ul>
+
+      </div>
+
+      <!-- VISUAL -->
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img
+          src="assets/img/software-agricola-dashboard-gestion-campo.webp"
+          class="img-fluid hero-visual hero-visual-nosotros"
+          alt="Equipo de Cosechando Datos desarrollando soluciones agrícolas validadas por productores"
+          title="Quiénes somos en Cosechando Datos"
+          loading="eager"
+          decoding="async"
+          width="800"
+          height="520"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+
+
+<!-- =========================
+     NOSOTROS – COSECHANDO DATOS
+     ========================= -->
+<section id="nosotros" class="about-cd section" aria-label="Quiénes somos y por qué escoger Cosechando Datos">
+  <div class="container" data-aos="fade-up">
+
+    <!-- Header -->
+    <div class="section-header text-center">
+      <span class="kicker">Nosotros</span>
+      <h2>Del campo a la tecnología, con soluciones que sí funcionan</h2>
+      <p class="lead">
+        No somos solo software: somos un aliado estratégico que acompaña tu gestión diaria con herramientas validadas por productores.
+      </p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+      <!-- Col izquierda: Quiénes somos -->
+      <div class="col-lg-6">
+        <article class="about-cd__panel h-100">
+          <div class="about-cd__badge">
+            <span class="badge rounded-pill text-bg-light border" title="Enfoque práctico y validado">
+              Plataforma validada por productores
+            </span>
+          </div>
+
+          <h3 class="about-cd__title">Quiénes somos</h3>
+          <p class="about-cd__text">
+            En Cosechando Datos, combinamos experiencia en el sector agrícola e informático para entregar soluciones que realmente funcionan en el campo.
+            No somos solo software; somos un aliado estratégico que acompaña tu gestión diaria.
+          </p>
+          <p class="about-cd__text">
+            Nuestra diferencia es simple: escuchamos al productor. Cada herramienta ha sido validada por quienes trabajan la tierra,
+            transformando necesidades reales en soluciones robustas, innovadoras y con un valor justo.
+          </p>
+          <p class="about-cd__text mb-0">
+            Crecemos junto a nuestros clientes, convirtiendo sus desafíos en herramientas cada vez más sólidas y prácticas.
+          </p>
+
+          <!-- Trust line -->
+          <div class="about-cd__trust">
+            <div class="trust-item">
+              <i class="bi bi-shield-check" aria-hidden="true"></i>
+              <div>
+                <strong>Confidencialidad por contrato</strong>
+                <span>Tus datos son tuyos y tú mantienes el control.</span>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <i class="bi bi-hdd-network" aria-hidden="true"></i>
+              <div>
+                <strong>Servidores encriptados + respaldos</strong>
+                <span>Protección permanente y continuidad operativa.</span>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+              <div>
+                <strong>Portabilidad total de datos</strong>
+                <span>Si terminas el servicio, te entregamos toda tu información.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Col derecha: Por qué escogernos -->
+      <div class="col-lg-6">
+        <aside class="about-cd__panel h-100">
+          <h3 class="about-cd__title">Por qué escogernos</h3>
+          <p class="about-cd__text">
+            La única solución 360° para tu campo: mejor control, mejores decisiones y menos improvisación.
+          </p>
+
+          <div class="about-cd__cards">
+            <div class="about-cd__card">
+              <div class="icn" aria-hidden="true"><i class="bi bi-grid-1x2"></i></div>
+              <div class="body">
+                <h4>Centralización total</h4>
+                <p>
+                  Una plataforma que cubre desde finanza hasta clima. Dile adiós a archivos aislados y soluciones fragmentadas.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-cd__card">
+              <div class="icn" aria-hidden="true"><i class="bi bi-person-check"></i></div>
+              <div class="body">
+                <h4>Presencia y compromiso</h4>
+                <p>
+                  Estamos contigo en el día a día. Cercanía, soporte operativo y acompañamiento real en la puesta en marcha.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-cd__card">
+              <div class="icn" aria-hidden="true"><i class="bi bi-lightning-charge"></i></div>
+              <div class="body">
+                <h4>Tecnología con valor real</h4>
+                <p>
+                  Alta usabilidad porque fue creada junto a productores: tecnología simple para procesos complejos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini impacto / rentabilidad -->
+          <div class="about-cd__impact">
+            <h4>¿Cómo mejora la rentabilidad?</h4>
+            <p class="mb-0">
+              Detecta fugas de recursos en tiempo real: rendimientos de mano de obra, control de inventarios y prevención de daños por heladas.
+              Información oportuna para evitar gastos innecesarios y maximizar productividad.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- FAQ breve (opcional pero recomendado) -->
+    <div class="row mt-4">
+      <div class="col-lg-10 mx-auto">
+        <div class="about-cd__faq" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-center mb-3">Preguntas frecuentes</h3>
+
+          <div class="accordion" id="aboutFaq">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq1h">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  ¿Cuál es el valor diferencial frente a otras opciones?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1h" data-bs-parent="#aboutFaq">
+                <div class="accordion-body">
+                  A diferencia de soluciones fragmentadas, ofrecemos una plataforma centralizada que cubre desde la finanza hasta el clima.
+                  Esto optimiza tu inversión al reducir costos de integración y mejorar la precisión de decisiones operativas.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq2h">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  ¿Es compleja la implementación?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2h" data-bs-parent="#aboutFaq">
+                <div class="accordion-body">
+                  No. Las herramientas fueron creadas junto a productores y priorizan usabilidad. Además, acompañamos la puesta en marcha
+                  para que la transición digital sea un éxito inmediato.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq3h">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  ¿Qué tan segura y confidencial es mi información?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3h" data-bs-parent="#aboutFaq">
+                <div class="accordion-body">
+                  Seguridad de alto nivel con servidores encriptados y respaldos automáticos. Garantizamos por contrato confidencialidad total:
+                  tu información es tuya y solo tú tienes el control.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq4h">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  ¿Qué pasa con mis datos si termino el contrato?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4h" data-bs-parent="#aboutFaq">
+                <div class="accordion-body">
+                  Tus datos son de tu propiedad exclusiva. Si decides finalizar el servicio, te entregamos toda tu información de manera íntegra y transparente.
+                  Creemos en relaciones basadas en valor y confianza.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cd__faqnote text-center">
+            <small>¿Quieres ver cómo se aplica a tu huerto? Pide una demo y lo revisamos con tus procesos reales.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <div>
+      <span>¿Tienes dudas?</span>
+      <span class="description-title">Hablemos de tu operación agrícola</span>
+    </div>
+    <p class="section-subtitle">
+      Nuestro equipo te orienta según tu campo, temporada y objetivos productivos.
+    </p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <!-- Info Column -->
+      <div class="col-lg-4">
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Ubicación</h3>
+            <p>Los Niches, Curicó, Chile</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Teléfono</h3>
+            <p>
+              +56956686855
+            </p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email</h3>
+            <p>
+              contacto@cosechandodatos.cl   
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Info Column -->
+
+      <!-- Form Column -->
+      <div class="col-lg-8">
+
+        <form
+  action="forms/contact.php"
+  method="post"
+  class="php-email-form"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  <div class="row gy-4">
+
+    <!-- Nombre -->
+    <div class="col-md-6">
+      <label for="contact-name" class="visually-hidden">Nombre y apellido</label>
+      <input
+        id="contact-name"
+        type="text"
+        name="name"
+        class="form-control"
+        placeholder="Nombre y apellido"
+        autocomplete="name"
+        required
+      >
+    </div>
+
+    <!-- Teléfono -->
+    <div class="col-md-6">
+      <label for="contact-phone" class="visually-hidden">Teléfono de contacto</label>
+      <input
+        id="contact-phone"
+        type="tel"
+        name="phone"
+        class="form-control"
+        placeholder="Teléfono (ej: +56 9 1234 5678)"
+        autocomplete="tel"
+        inputmode="tel"
+        pattern="^\+?[0-9\s()\-]{8,}$"
+        required
+      >
+    </div>
+
+    <!-- Email -->
+    <div class="col-md-12">
+      <label for="contact-email" class="visually-hidden">Correo electrónico</label>
+      <input
+        id="contact-email"
+        type="email"
+        class="form-control"
+        name="email"
+        placeholder="Correo electrónico"
+        autocomplete="email"
+        required
+      >
+    </div>
+
+    <!-- Cultivo / rubro -->
+    <div class="col-md-6">
+      <label for="contact-crop" class="visually-hidden">Cultivo o rubro principal</label>
+      <select id="contact-crop" name="crop" class="form-control" required>
+        <option value="" selected disabled>¿Qué cultivo o rubro trabajas?</option>
+        <option value="Manzanos">Manzanos</option>
+        <option value="Uva de mesa">Uva de mesa</option>
+        <option value="Cerezos">Cerezos</option>
+        <option value="Arándanos">Arándanos</option>
+        <option value="Nogales">Nogales</option>
+        <option value="Carozos">Carozos</option>
+        <option value="Hortalizas">Hortalizas</option>
+        <option value="Otro">Otro</option>
+      </select>
+    </div>
+
+    <!-- Región / zona -->
+    <div class="col-md-6">
+      <label for="contact-zone" class="visually-hidden">Zona o región</label>
+      <input
+        id="contact-zone"
+        type="text"
+        name="zone"
+        class="form-control"
+        placeholder="Zona / Región (ej: Maule, O’Higgins, Metropolitana)"
+        autocomplete="address-level1"
+        required
+      >
+    </div>
+
+    <!-- Superficie (opcional) -->
+    <div class="col-md-6">
+      <label for="contact-area" class="visually-hidden">Superficie aproximada (opcional)</label>
+      <input
+        id="contact-area"
+        type="text"
+        name="area"
+        class="form-control"
+        placeholder="Superficie aprox. (opcional) — ej: 25 ha"
+        inputmode="numeric"
+      >
+    </div>
+
+    <!-- Interés principal -->
+    <div class="col-md-6">
+      <label for="contact-interest" class="visually-hidden">Interés principal</label>
+      <select id="contact-interest" name="interest" class="form-control" required>
+        <option value="" selected disabled>¿Qué necesitas mejorar primero?</option>
+        <option value="Costos y finanzas">Costos y finanzas</option>
+        <option value="Labores y cuadrillas">Labores y cuadrillas</option>
+        <option value="Control de cosecha">Control de cosecha</option>
+        <option value="Alerta de heladas">Alerta de heladas</option>
+        <option value="Todo (plataforma 360°)">Todo (plataforma 360°)</option>
+      </select>
+    </div>
+
+    <!-- Mensaje -->
+    <div class="col-md-12">
+      <label for="contact-message" class="visually-hidden">Mensaje</label>
+      <textarea
+        id="contact-message"
+        class="form-control"
+        name="message"
+        rows="6"
+        placeholder="Cuéntanos tu situación: temporada, equipo, problema actual (costos, cuadrillas, cosecha, heladas) y qué te gustaría controlar mejor."
+        required
+      ></textarea>
+    </div>
+
+    <!-- Consentimiento simple (recomendado) -->
+    <div class="col-md-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="yes" id="contact-consent" name="consent" required>
+        <label class="form-check-label" for="contact-consent">
+          Acepto ser contactado para coordinar una demo y recibir información del servicio.
+        </label>
+      </div>
+    </div>
+
+    <!-- Botón + feedback -->
+    <div class="col-md-12 text-center">
+
+      <div class="loading">Enviando mensaje…</div>
+      <div class="error-message"></div>
+      <div class="sent-message">
+        ¡Listo! Recibimos tu solicitud. Te contactaremos para agendar una demo.
+      </div>
+
+      <button type="submit">Solicitar demo</button>
+
+      <small class="d-block mt-2" style="opacity:.75;">
+        Respuesta rápida en horario laboral · Demo sin compromiso
+      </small>
+
+    </div>
+
+  </div>
+</form>
+
+
+      </div>
+      <!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /Contact Section -->
+
+
+  </main>
+
+<footer id="footer" class="footer light-background">
+  <div class="container">
+
+    <!-- Top: Marca (izq) + Certificaciones (der) -->
+    <div class="footer-top">
+
+      <!-- Col 1: Marca -->
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo" aria-label="Cosechando Datos - Inicio">
+          <img
+            src="assets/img/logotipo-cosechando-datos.webp"
+            alt="Cosechando Datos - Software agrícola"
+            title="Cosechando Datos - Software agrícola"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
+
+        <p class="footer-tagline">
+          Software agrícola para gestionar costos, labores, cosecha y alertas en un solo lugar.
+        </p>
+      </div>
+
+      <!-- Col 2: Certificaciones -->
+      <div class="footer-certbox" aria-label="Certificaciones">
+        <p class="footer-certbox__text">
+          Diseñado para que cumplas los estándares exigidos en el rubro agrícola.
+        </p>
+
+        <div class="footer-certs">
+          <img
+            class="footer-certs__logo"
+            src="assets/img/sag-logotipo-cosechando-datos.webp"
+            alt="Certificación SAG"
+            title="Certificación SAG"
+            loading="lazy"
+            decoding="async"
+            width="140"
+            height="40"
+            onerror="this.style.display='none';"
+          >
+
+          <img
+            class="footer-certs__logo"
+            src="assets/img/globalg.a.p logotipo-cosechando-datos.webp"
+            alt="Certificación Global G.A.P."
+            title="Certificación Global G.A.P."
+            loading="lazy"
+            decoding="async"
+            width="200"
+            height="40"
+            onerror="this.style.display='none';"
+          >
+          
+        </div>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <hr class="footer-divider">
+
+    <!-- Bottom: copyright + redes + créditos (SIN CAMBIOS) -->
+    <div class="footer-bottom">
+
+      <div class="copyright">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Cosechando Datos</strong>
+          <span>Todos los derechos reservados</span>
+        </p>
+      </div>
+
+      <div class="social-links" aria-label="Redes sociales de Cosechando Datos">
+        <a
+          href="https://www.facebook.com/profile.php?id=100087613870488&locale=es_LA"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook de Cosechando Datos"
+          title="Facebook"
+        >
+          <i class="bi bi-facebook" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/cosechandodatos.cl/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram de Cosechando Datos"
+          title="Instagram"
+        >
+          <i class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/cosechando-datos-spa-066a64213/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn de Cosechando Datos"
+          title="LinkedIn"
+        >
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="credits">
+        Diseñado por
+        <a
+          href="https://accinnovations.cl/"
+          target="_blank"
+          rel="noopener"
+          title="Acc Innovations"
+        >
+          Acc Innovations
+        </a>
+      </div>
+
+    </div><!-- /footer-bottom -->
+
+  </div>
+</footer>
+
+
+
+
+
+  <!-- WhatsApp Button -->
+<a 
+  href="https://wa.me/56956686855?text=Hola%2C%20tengo%20inter%C3%A9s%20en%20contratar%20el%20software"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+>
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+    alt="WhatsApp"
+  >
+</a>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
